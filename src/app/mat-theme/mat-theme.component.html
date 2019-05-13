@@ -7,9 +7,9 @@ theme">
     500: {{ theme.primaryColor }},
     700: {{ theme.primaryDarkColor }},
     contrast: (
-      100: $dark-primary-text,
-      500: $light-primary-text,
-      700: $light-primary-text,
+      100: {{ theme.primaryLightColorText }},
+      500: {{ theme.primaryColorText }},
+      700: {{ theme.primaryDarkColorText }},
     )
   );
   $mat-accent-scheme: (
@@ -17,9 +17,9 @@ theme">
     500: {{ theme.accentColor }},
     700: {{ theme.accentDarkColor }},
     contrast: (
-      100: $dark-primary-text,
-      500: $light-primary-text,
-      700: $light-primary-text,
+      100: {{ theme.accentLightColorText }},
+      500: {{ theme.accentColorText }},
+      700: {{ theme.accentDarkColorText }},
     )
   );
   $mat-primary-palette: mat-palette($mat-primary-scheme);
