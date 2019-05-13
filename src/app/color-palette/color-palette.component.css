@@ -1,0 +1,12 @@
+.colorPicker {
+  width: 30px;
+  height: 30px;
+  padding: 0;
+  border: 0;
+}
+
+.colorHex {
+  display: inline-block;
+  vertical-align: top;
+  line-height: 30px;
+}

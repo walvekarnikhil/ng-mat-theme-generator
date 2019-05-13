@@ -1,0 +1,13 @@
+
+
+.widgetLabel {
+  width: 200px;
+}
+
+.spacer {
+  flex: 1 1 auto;
+}
+
+tr {
+  height: 50px;
+}

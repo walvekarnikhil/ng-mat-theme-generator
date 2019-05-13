@@ -1,0 +1,1427 @@
+[
+  {
+    "name": "Red",
+    "palette": [
+      {
+        "shade": "50",
+        "hex": "#FFEBEE",
+        "textShade": "#000000de"
+      },
+      {
+        "shade": "100",
+        "hex": "#FFCDD2",
+        "textShade": "#000000de"
+      },
+      {
+        "shade": "200",
+        "hex": "#EF9A9A",
+        "textShade": "#000000de"
+      },
+      {
+        "shade": "300",
+        "hex": "#E57373",
+        "textShade": "#000000de"
+      },
+      {
+        "shade": "400",
+        "hex": "#EF5350",
+        "textShade": "#ffffffde"
+      },
+      {
+        "shade": "500",
+        "hex": "#F44336",
+        "textShade": "#ffffffde"
+      },
+      {
+        "shade": "600",
+        "hex": "#E53935",
+        "textShade": "#ffffffde"
+      },
+      {
+        "shade": "700",
+        "hex": "#D32F2F",
+        "textShade": "#ffffffde"
+      },
+      {
+        "shade": "800",
+        "hex": "#C62828",
+        "textShade": "#ffffffde"
+      },
+      {
+        "shade": "900",
+        "hex": "#B71C1C",
+        "textShade": "#ffffffde"
+      },
+      {
+        "shade": "A100",
+        "hex": "#FF8A80",
+        "textShade": "#000000de"
+      },
+      {
+        "shade": "A200",
+        "hex": "#FF5252",
+        "textShade": "#ffffffde"
+      },
+      {
+        "shade": "A400",
+        "hex": "#FF1744",
+        "textShade": "#ffffffde"
+      },
+      {
+        "shade": "A700",
+        "hex": "#D50000",
+        "textShade": "#ffffffde"
+      }
+    ]
+  },
+  {
+    "name": "Pink",
+    "palette": [
+      {
+        "shade": "50",
+        "hex": "#FFEBEE",
+        "textShade": "#000000de"
+      },
+      {
+        "shade": "100",
+        "hex": "#FFCDD2",
+        "textShade": "#000000de"
+      },
+      {
+        "shade": "200",
+        "hex": "#EF9A9A",
+        "textShade": "#000000de"
+      },
+      {
+        "shade": "300",
+        "hex": "#E57373",
+        "textShade": "#000000de"
+      },
+      {
+        "shade": "400",
+        "hex": "#EF5350",
+        "textShade": "#ffffffde"
+      },
+      {
+        "shade": "500",
+        "hex": "#F44336",
+        "textShade": "#ffffffde"
+      },
+      {
+        "shade": "600",
+        "hex": "#E53935",
+        "textShade": "#ffffffde"
+      },
+      {
+        "shade": "700",
+        "hex": "#D32F2F",
+        "textShade": "#ffffffde"
+      },
+      {
+        "shade": "800",
+        "hex": "#C62828",
+        "textShade": "#ffffffde"
+      },
+      {
+        "shade": "900",
+        "hex": "#B71C1C",
+        "textShade": "#ffffffde"
+      },
+      {
+        "shade": "A100",
+        "hex": "#FF8A80",
+        "textShade": "#000000de"
+      },
+      {
+        "shade": "A200",
+        "hex": "#FF5252",
+        "textShade": "#ffffffde"
+      },
+      {
+        "shade": "A400",
+        "hex": "#FF1744",
+        "textShade": "#ffffffde"
+      },
+      {
+        "shade": "A700",
+        "hex": "#D50000",
+        "textShade": "#ffffffde"
+      }
+    ]
+  },
+  {
+    "name": "Purple",
+    "palette": [
+      {
+        "shade": "50",
+        "hex": "#FFEBEE",
+        "textShade": "#000000de"
+      },
+      {
+        "shade": "100",
+        "hex": "#FFCDD2",
+        "textShade": "#000000de"
+      },
+      {
+        "shade": "200",
+        "hex": "#EF9A9A",
+        "textShade": "#000000de"
+      },
+      {
+        "shade": "300",
+        "hex": "#E57373",
+        "textShade": "#000000de"
+      },
+      {
+        "shade": "400",
+        "hex": "#EF5350",
+        "textShade": "#ffffffde"
+      },
+      {
+        "shade": "500",
+        "hex": "#F44336",
+        "textShade": "#ffffffde"
+      },
+      {
+        "shade": "600",
+        "hex": "#E53935",
+        "textShade": "#ffffffde"
+      },
+      {
+        "shade": "700",
+        "hex": "#D32F2F",
+        "textShade": "#ffffffde"
+      },
+      {
+        "shade": "800",
+        "hex": "#C62828",
+        "textShade": "#ffffffde"
+      },
+      {
+        "shade": "900",
+        "hex": "#B71C1C",
+        "textShade": "#ffffffde"
+      },
+      {
+        "shade": "A100",
+        "hex": "#FF8A80",
+        "textShade": "#000000de"
+      },
+      {
+        "shade": "A200",
+        "hex": "#FF5252",
+        "textShade": "#ffffffde"
+      },
+      {
+        "shade": "A400",
+        "hex": "#FF1744",
+        "textShade": "#ffffffde"
+      },
+      {
+        "shade": "A700",
+        "hex": "#D50000",
+        "textShade": "#ffffffde"
+      }
+    ]
+  },
+  {
+    "name": "Deep Purple",
+    "palette": [
+      {
+        "shade": "50",
+        "hex": "#FFEBEE",
+        "textShade": "#000000de"
+      },
+      {
+        "shade": "100",
+        "hex": "#FFCDD2",
+        "textShade": "#000000de"
+      },
+      {
+        "shade": "200",
+        "hex": "#EF9A9A",
+        "textShade": "#000000de"
+      },
+      {
+        "shade": "300",
+        "hex": "#E57373",
+        "textShade": "#000000de"
+      },
+      {
+        "shade": "400",
+        "hex": "#EF5350",
+        "textShade": "#ffffffde"
+      },
+      {
+        "shade": "500",
+        "hex": "#F44336",
+        "textShade": "#ffffffde"
+      },
+      {
+        "shade": "600",
+        "hex": "#E53935",
+        "textShade": "#ffffffde"
+      },
+      {
+        "shade": "700",
+        "hex": "#D32F2F",
+        "textShade": "#ffffffde"
+      },
+      {
+        "shade": "800",
+        "hex": "#C62828",
+        "textShade": "#ffffffde"
+      },
+      {
+        "shade": "900",
+        "hex": "#B71C1C",
+        "textShade": "#ffffffde"
+      },
+      {
+        "shade": "A100",
+        "hex": "#FF8A80",
+        "textShade": "#000000de"
+      },
+      {
+        "shade": "A200",
+        "hex": "#FF5252",
+        "textShade": "#ffffffde"
+      },
+      {
+        "shade": "A400",
+        "hex": "#FF1744",
+        "textShade": "#ffffffde"
+      },
+      {
+        "shade": "A700",
+        "hex": "#D50000",
+        "textShade": "#ffffffde"
+      }
+    ]
+  },
+  {
+    "name": "Indigo",
+    "palette": [
+      {
+        "shade": "50",
+        "hex": "#FFEBEE",
+        "textShade": "#000000de"
+      },
+      {
+        "shade": "100",
+        "hex": "#FFCDD2",
+        "textShade": "#000000de"
+      },
+      {
+        "shade": "200",
+        "hex": "#EF9A9A",
+        "textShade": "#000000de"
+      },
+      {
+        "shade": "300",
+        "hex": "#E57373",
+        "textShade": "#000000de"
+      },
+      {
+        "shade": "400",
+        "hex": "#EF5350",
+        "textShade": "#ffffffde"
+      },
+      {
+        "shade": "500",
+        "hex": "#F44336",
+        "textShade": "#ffffffde"
+      },
+      {
+        "shade": "600",
+        "hex": "#E53935",
+        "textShade": "#ffffffde"
+      },
+      {
+        "shade": "700",
+        "hex": "#D32F2F",
+        "textShade": "#ffffffde"
+      },
+      {
+        "shade": "800",
+        "hex": "#C62828",
+        "textShade": "#ffffffde"
+      },
+      {
+        "shade": "900",
+        "hex": "#B71C1C",
+        "textShade": "#ffffffde"
+      },
+      {
+        "shade": "A100",
+        "hex": "#FF8A80",
+        "textShade": "#000000de"
+      },
+      {
+        "shade": "A200",
+        "hex": "#FF5252",
+        "textShade": "#ffffffde"
+      },
+      {
+        "shade": "A400",
+        "hex": "#FF1744",
+        "textShade": "#ffffffde"
+      },
+      {
+        "shade": "A700",
+        "hex": "#D50000",
+        "textShade": "#ffffffde"
+      }
+    ]
+  },
+  {
+    "name": "Blue",
+    "palette": [
+      {
+        "shade": "50",
+        "hex": "#FFEBEE",
+        "textShade": "#000000de"
+      },
+      {
+        "shade": "100",
+        "hex": "#FFCDD2",
+        "textShade": "#000000de"
+      },
+      {
+        "shade": "200",
+        "hex": "#EF9A9A",
+        "textShade": "#000000de"
+      },
+      {
+        "shade": "300",
+        "hex": "#E57373",
+        "textShade": "#000000de"
+      },
+      {
+        "shade": "400",
+        "hex": "#EF5350",
+        "textShade": "#ffffffde"
+      },
+      {
+        "shade": "500",
+        "hex": "#F44336",
+        "textShade": "#ffffffde"
+      },
+      {
+        "shade": "600",
+        "hex": "#E53935",
+        "textShade": "#ffffffde"
+      },
+      {
+        "shade": "700",
+        "hex": "#D32F2F",
+        "textShade": "#ffffffde"
+      },
+      {
+        "shade": "800",
+        "hex": "#C62828",
+        "textShade": "#ffffffde"
+      },
+      {
+        "shade": "900",
+        "hex": "#B71C1C",
+        "textShade": "#ffffffde"
+      },
+      {
+        "shade": "A100",
+        "hex": "#FF8A80",
+        "textShade": "#000000de"
+      },
+      {
+        "shade": "A200",
+        "hex": "#FF5252",
+        "textShade": "#ffffffde"
+      },
+      {
+        "shade": "A400",
+        "hex": "#FF1744",
+        "textShade": "#ffffffde"
+      },
+      {
+        "shade": "A700",
+        "hex": "#D50000",
+        "textShade": "#ffffffde"
+      }
+    ]
+  },
+  {
+    "name": "Light Blue",
+    "palette": [
+      {
+        "shade": "50",
+        "hex": "#FFEBEE",
+        "textShade": "#000000de"
+      },
+      {
+        "shade": "100",
+        "hex": "#FFCDD2",
+        "textShade": "#000000de"
+      },
+      {
+        "shade": "200",
+        "hex": "#EF9A9A",
+        "textShade": "#000000de"
+      },
+      {
+        "shade": "300",
+        "hex": "#E57373",
+        "textShade": "#000000de"
+      },
+      {
+        "shade": "400",
+        "hex": "#EF5350",
+        "textShade": "#ffffffde"
+      },
+      {
+        "shade": "500",
+        "hex": "#F44336",
+        "textShade": "#ffffffde"
+      },
+      {
+        "shade": "600",
+        "hex": "#E53935",
+        "textShade": "#ffffffde"
+      },
+      {
+        "shade": "700",
+        "hex": "#D32F2F",
+        "textShade": "#ffffffde"
+      },
+      {
+        "shade": "800",
+        "hex": "#C62828",
+        "textShade": "#ffffffde"
+      },
+      {
+        "shade": "900",
+        "hex": "#B71C1C",
+        "textShade": "#ffffffde"
+      },
+      {
+        "shade": "A100",
+        "hex": "#FF8A80",
+        "textShade": "#000000de"
+      },
+      {
+        "shade": "A200",
+        "hex": "#FF5252",
+        "textShade": "#ffffffde"
+      },
+      {
+        "shade": "A400",
+        "hex": "#FF1744",
+        "textShade": "#ffffffde"
+      },
+      {
+        "shade": "A700",
+        "hex": "#D50000",
+        "textShade": "#ffffffde"
+      }
+    ]
+  },
+  {
+    "name": "Cyan",
+    "palette": [
+      {
+        "shade": "50",
+        "hex": "#FFEBEE",
+        "textShade": "#000000de"
+      },
+      {
+        "shade": "100",
+        "hex": "#FFCDD2",
+        "textShade": "#000000de"
+      },
+      {
+        "shade": "200",
+        "hex": "#EF9A9A",
+        "textShade": "#000000de"
+      },
+      {
+        "shade": "300",
+        "hex": "#E57373",
+        "textShade": "#000000de"
+      },
+      {
+        "shade": "400",
+        "hex": "#EF5350",
+        "textShade": "#ffffffde"
+      },
+      {
+        "shade": "500",
+        "hex": "#F44336",
+        "textShade": "#ffffffde"
+      },
+      {
+        "shade": "600",
+        "hex": "#E53935",
+        "textShade": "#ffffffde"
+      },
+      {
+        "shade": "700",
+        "hex": "#D32F2F",
+        "textShade": "#ffffffde"
+      },
+      {
+        "shade": "800",
+        "hex": "#C62828",
+        "textShade": "#ffffffde"
+      },
+      {
+        "shade": "900",
+        "hex": "#B71C1C",
+        "textShade": "#ffffffde"
+      },
+      {
+        "shade": "A100",
+        "hex": "#FF8A80",
+        "textShade": "#000000de"
+      },
+      {
+        "shade": "A200",
+        "hex": "#FF5252",
+        "textShade": "#ffffffde"
+      },
+      {
+        "shade": "A400",
+        "hex": "#FF1744",
+        "textShade": "#ffffffde"
+      },
+      {
+        "shade": "A700",
+        "hex": "#D50000",
+        "textShade": "#ffffffde"
+      }
+    ]
+  },
+  {
+    "name": "Teal",
+    "palette": [
+      {
+        "shade": "50",
+        "hex": "#FFEBEE",
+        "textShade": "#000000de"
+      },
+      {
+        "shade": "100",
+        "hex": "#FFCDD2",
+        "textShade": "#000000de"
+      },
+      {
+        "shade": "200",
+        "hex": "#EF9A9A",
+        "textShade": "#000000de"
+      },
+      {
+        "shade": "300",
+        "hex": "#E57373",
+        "textShade": "#000000de"
+      },
+      {
+        "shade": "400",
+        "hex": "#EF5350",
+        "textShade": "#ffffffde"
+      },
+      {
+        "shade": "500",
+        "hex": "#F44336",
+        "textShade": "#ffffffde"
+      },
+      {
+        "shade": "600",
+        "hex": "#E53935",
+        "textShade": "#ffffffde"
+      },
+      {
+        "shade": "700",
+        "hex": "#D32F2F",
+        "textShade": "#ffffffde"
+      },
+      {
+        "shade": "800",
+        "hex": "#C62828",
+        "textShade": "#ffffffde"
+      },
+      {
+        "shade": "900",
+        "hex": "#B71C1C",
+        "textShade": "#ffffffde"
+      },
+      {
+        "shade": "A100",
+        "hex": "#FF8A80",
+        "textShade": "#000000de"
+      },
+      {
+        "shade": "A200",
+        "hex": "#FF5252",
+        "textShade": "#ffffffde"
+      },
+      {
+        "shade": "A400",
+        "hex": "#FF1744",
+        "textShade": "#ffffffde"
+      },
+      {
+        "shade": "A700",
+        "hex": "#D50000",
+        "textShade": "#ffffffde"
+      }
+    ]
+  },
+  {
+    "name": "Green",
+    "palette": [
+      {
+        "shade": "50",
+        "hex": "#FFEBEE",
+        "textShade": "#000000de"
+      },
+      {
+        "shade": "100",
+        "hex": "#FFCDD2",
+        "textShade": "#000000de"
+      },
+      {
+        "shade": "200",
+        "hex": "#EF9A9A",
+        "textShade": "#000000de"
+      },
+      {
+        "shade": "300",
+        "hex": "#E57373",
+        "textShade": "#000000de"
+      },
+      {
+        "shade": "400",
+        "hex": "#EF5350",
+        "textShade": "#ffffffde"
+      },
+      {
+        "shade": "500",
+        "hex": "#F44336",
+        "textShade": "#ffffffde"
+      },
+      {
+        "shade": "600",
+        "hex": "#E53935",
+        "textShade": "#ffffffde"
+      },
+      {
+        "shade": "700",
+        "hex": "#D32F2F",
+        "textShade": "#ffffffde"
+      },
+      {
+        "shade": "800",
+        "hex": "#C62828",
+        "textShade": "#ffffffde"
+      },
+      {
+        "shade": "900",
+        "hex": "#B71C1C",
+        "textShade": "#ffffffde"
+      },
+      {
+        "shade": "A100",
+        "hex": "#FF8A80",
+        "textShade": "#000000de"
+      },
+      {
+        "shade": "A200",
+        "hex": "#FF5252",
+        "textShade": "#ffffffde"
+      },
+      {
+        "shade": "A400",
+        "hex": "#FF1744",
+        "textShade": "#ffffffde"
+      },
+      {
+        "shade": "A700",
+        "hex": "#D50000",
+        "textShade": "#ffffffde"
+      }
+    ]
+  },
+  {
+    "name": "Light Green",
+    "palette": [
+      {
+        "shade": "50",
+        "hex": "#FFEBEE",
+        "textShade": "#000000de"
+      },
+      {
+        "shade": "100",
+        "hex": "#FFCDD2",
+        "textShade": "#000000de"
+      },
+      {
+        "shade": "200",
+        "hex": "#EF9A9A",
+        "textShade": "#000000de"
+      },
+      {
+        "shade": "300",
+        "hex": "#E57373",
+        "textShade": "#000000de"
+      },
+      {
+        "shade": "400",
+        "hex": "#EF5350",
+        "textShade": "#ffffffde"
+      },
+      {
+        "shade": "500",
+        "hex": "#F44336",
+        "textShade": "#ffffffde"
+      },
+      {
+        "shade": "600",
+        "hex": "#E53935",
+        "textShade": "#ffffffde"
+      },
+      {
+        "shade": "700",
+        "hex": "#D32F2F",
+        "textShade": "#ffffffde"
+      },
+      {
+        "shade": "800",
+        "hex": "#C62828",
+        "textShade": "#ffffffde"
+      },
+      {
+        "shade": "900",
+        "hex": "#B71C1C",
+        "textShade": "#ffffffde"
+      },
+      {
+        "shade": "A100",
+        "hex": "#FF8A80",
+        "textShade": "#000000de"
+      },
+      {
+        "shade": "A200",
+        "hex": "#FF5252",
+        "textShade": "#ffffffde"
+      },
+      {
+        "shade": "A400",
+        "hex": "#FF1744",
+        "textShade": "#ffffffde"
+      },
+      {
+        "shade": "A700",
+        "hex": "#D50000",
+        "textShade": "#ffffffde"
+      }
+    ]
+  },
+  {
+    "name": "Lime",
+    "palette": [
+      {
+        "shade": "50",
+        "hex": "#FFEBEE",
+        "textShade": "#000000de"
+      },
+      {
+        "shade": "100",
+        "hex": "#FFCDD2",
+        "textShade": "#000000de"
+      },
+      {
+        "shade": "200",
+        "hex": "#EF9A9A",
+        "textShade": "#000000de"
+      },
+      {
+        "shade": "300",
+        "hex": "#E57373",
+        "textShade": "#000000de"
+      },
+      {
+        "shade": "400",
+        "hex": "#EF5350",
+        "textShade": "#ffffffde"
+      },
+      {
+        "shade": "500",
+        "hex": "#F44336",
+        "textShade": "#ffffffde"
+      },
+      {
+        "shade": "600",
+        "hex": "#E53935",
+        "textShade": "#ffffffde"
+      },
+      {
+        "shade": "700",
+        "hex": "#D32F2F",
+        "textShade": "#ffffffde"
+      },
+      {
+        "shade": "800",
+        "hex": "#C62828",
+        "textShade": "#ffffffde"
+      },
+      {
+        "shade": "900",
+        "hex": "#B71C1C",
+        "textShade": "#ffffffde"
+      },
+      {
+        "shade": "A100",
+        "hex": "#FF8A80",
+        "textShade": "#000000de"
+      },
+      {
+        "shade": "A200",
+        "hex": "#FF5252",
+        "textShade": "#ffffffde"
+      },
+      {
+        "shade": "A400",
+        "hex": "#FF1744",
+        "textShade": "#ffffffde"
+      },
+      {
+        "shade": "A700",
+        "hex": "#D50000",
+        "textShade": "#ffffffde"
+      }
+    ]
+  },
+  {
+    "name": "Yellow",
+    "palette": [
+      {
+        "shade": "50",
+        "hex": "#FFEBEE",
+        "textShade": "#000000de"
+      },
+      {
+        "shade": "100",
+        "hex": "#FFCDD2",
+        "textShade": "#000000de"
+      },
+      {
+        "shade": "200",
+        "hex": "#EF9A9A",
+        "textShade": "#000000de"
+      },
+      {
+        "shade": "300",
+        "hex": "#E57373",
+        "textShade": "#000000de"
+      },
+      {
+        "shade": "400",
+        "hex": "#EF5350",
+        "textShade": "#ffffffde"
+      },
+      {
+        "shade": "500",
+        "hex": "#F44336",
+        "textShade": "#ffffffde"
+      },
+      {
+        "shade": "600",
+        "hex": "#E53935",
+        "textShade": "#ffffffde"
+      },
+      {
+        "shade": "700",
+        "hex": "#D32F2F",
+        "textShade": "#ffffffde"
+      },
+      {
+        "shade": "800",
+        "hex": "#C62828",
+        "textShade": "#ffffffde"
+      },
+      {
+        "shade": "900",
+        "hex": "#B71C1C",
+        "textShade": "#ffffffde"
+      },
+      {
+        "shade": "A100",
+        "hex": "#FF8A80",
+        "textShade": "#000000de"
+      },
+      {
+        "shade": "A200",
+        "hex": "#FF5252",
+        "textShade": "#ffffffde"
+      },
+      {
+        "shade": "A400",
+        "hex": "#FF1744",
+        "textShade": "#ffffffde"
+      },
+      {
+        "shade": "A700",
+        "hex": "#D50000",
+        "textShade": "#ffffffde"
+      }
+    ]
+  },
+  {
+    "name": "Amber",
+    "palette": [
+      {
+        "shade": "50",
+        "hex": "#FFEBEE",
+        "textShade": "#000000de"
+      },
+      {
+        "shade": "100",
+        "hex": "#FFCDD2",
+        "textShade": "#000000de"
+      },
+      {
+        "shade": "200",
+        "hex": "#EF9A9A",
+        "textShade": "#000000de"
+      },
+      {
+        "shade": "300",
+        "hex": "#E57373",
+        "textShade": "#000000de"
+      },
+      {
+        "shade": "400",
+        "hex": "#EF5350",
+        "textShade": "#ffffffde"
+      },
+      {
+        "shade": "500",
+        "hex": "#F44336",
+        "textShade": "#ffffffde"
+      },
+      {
+        "shade": "600",
+        "hex": "#E53935",
+        "textShade": "#ffffffde"
+      },
+      {
+        "shade": "700",
+        "hex": "#D32F2F",
+        "textShade": "#ffffffde"
+      },
+      {
+        "shade": "800",
+        "hex": "#C62828",
+        "textShade": "#ffffffde"
+      },
+      {
+        "shade": "900",
+        "hex": "#B71C1C",
+        "textShade": "#ffffffde"
+      },
+      {
+        "shade": "A100",
+        "hex": "#FF8A80",
+        "textShade": "#000000de"
+      },
+      {
+        "shade": "A200",
+        "hex": "#FF5252",
+        "textShade": "#ffffffde"
+      },
+      {
+        "shade": "A400",
+        "hex": "#FF1744",
+        "textShade": "#ffffffde"
+      },
+      {
+        "shade": "A700",
+        "hex": "#D50000",
+        "textShade": "#ffffffde"
+      }
+    ]
+  },
+  {
+    "name": "Orange",
+    "palette": [
+      {
+        "shade": "50",
+        "hex": "#FFEBEE",
+        "textShade": "#000000de"
+      },
+      {
+        "shade": "100",
+        "hex": "#FFCDD2",
+        "textShade": "#000000de"
+      },
+      {
+        "shade": "200",
+        "hex": "#EF9A9A",
+        "textShade": "#000000de"
+      },
+      {
+        "shade": "300",
+        "hex": "#E57373",
+        "textShade": "#000000de"
+      },
+      {
+        "shade": "400",
+        "hex": "#EF5350",
+        "textShade": "#ffffffde"
+      },
+      {
+        "shade": "500",
+        "hex": "#F44336",
+        "textShade": "#ffffffde"
+      },
+      {
+        "shade": "600",
+        "hex": "#E53935",
+        "textShade": "#ffffffde"
+      },
+      {
+        "shade": "700",
+        "hex": "#D32F2F",
+        "textShade": "#ffffffde"
+      },
+      {
+        "shade": "800",
+        "hex": "#C62828",
+        "textShade": "#ffffffde"
+      },
+      {
+        "shade": "900",
+        "hex": "#B71C1C",
+        "textShade": "#ffffffde"
+      },
+      {
+        "shade": "A100",
+        "hex": "#FF8A80",
+        "textShade": "#000000de"
+      },
+      {
+        "shade": "A200",
+        "hex": "#FF5252",
+        "textShade": "#ffffffde"
+      },
+      {
+        "shade": "A400",
+        "hex": "#FF1744",
+        "textShade": "#ffffffde"
+      },
+      {
+        "shade": "A700",
+        "hex": "#D50000",
+        "textShade": "#ffffffde"
+      }
+    ]
+  },
+  {
+    "name": "Deep Orange",
+    "palette": [
+      {
+        "shade": "50",
+        "hex": "#FFEBEE",
+        "textShade": "#000000de"
+      },
+      {
+        "shade": "100",
+        "hex": "#FFCDD2",
+        "textShade": "#000000de"
+      },
+      {
+        "shade": "200",
+        "hex": "#EF9A9A",
+        "textShade": "#000000de"
+      },
+      {
+        "shade": "300",
+        "hex": "#E57373",
+        "textShade": "#000000de"
+      },
+      {
+        "shade": "400",
+        "hex": "#EF5350",
+        "textShade": "#ffffffde"
+      },
+      {
+        "shade": "500",
+        "hex": "#F44336",
+        "textShade": "#ffffffde"
+      },
+      {
+        "shade": "600",
+        "hex": "#E53935",
+        "textShade": "#ffffffde"
+      },
+      {
+        "shade": "700",
+        "hex": "#D32F2F",
+        "textShade": "#ffffffde"
+      },
+      {
+        "shade": "800",
+        "hex": "#C62828",
+        "textShade": "#ffffffde"
+      },
+      {
+        "shade": "900",
+        "hex": "#B71C1C",
+        "textShade": "#ffffffde"
+      },
+      {
+        "shade": "A100",
+        "hex": "#FF8A80",
+        "textShade": "#000000de"
+      },
+      {
+        "shade": "A200",
+        "hex": "#FF5252",
+        "textShade": "#ffffffde"
+      },
+      {
+        "shade": "A400",
+        "hex": "#FF1744",
+        "textShade": "#ffffffde"
+      },
+      {
+        "shade": "A700",
+        "hex": "#D50000",
+        "textShade": "#ffffffde"
+      }
+    ]
+  },
+  {
+    "name": "Brown",
+    "palette": [
+      {
+        "shade": "50",
+        "hex": "#FFEBEE",
+        "textShade": "#000000de"
+      },
+      {
+        "shade": "100",
+        "hex": "#FFCDD2",
+        "textShade": "#000000de"
+      },
+      {
+        "shade": "200",
+        "hex": "#EF9A9A",
+        "textShade": "#000000de"
+      },
+      {
+        "shade": "300",
+        "hex": "#E57373",
+        "textShade": "#000000de"
+      },
+      {
+        "shade": "400",
+        "hex": "#EF5350",
+        "textShade": "#ffffffde"
+      },
+      {
+        "shade": "500",
+        "hex": "#F44336",
+        "textShade": "#ffffffde"
+      },
+      {
+        "shade": "600",
+        "hex": "#E53935",
+        "textShade": "#ffffffde"
+      },
+      {
+        "shade": "700",
+        "hex": "#D32F2F",
+        "textShade": "#ffffffde"
+      },
+      {
+        "shade": "800",
+        "hex": "#C62828",
+        "textShade": "#ffffffde"
+      },
+      {
+        "shade": "900",
+        "hex": "#B71C1C",
+        "textShade": "#ffffffde"
+      },
+      {
+        "shade": "A100",
+        "hex": "#FF8A80",
+        "textShade": "#000000de"
+      },
+      {
+        "shade": "A200",
+        "hex": "#FF5252",
+        "textShade": "#ffffffde"
+      },
+      {
+        "shade": "A400",
+        "hex": "#FF1744",
+        "textShade": "#ffffffde"
+      },
+      {
+        "shade": "A700",
+        "hex": "#D50000",
+        "textShade": "#ffffffde"
+      }
+    ]
+  },
+  {
+    "name": "Grey",
+    "palette": [
+      {
+        "shade": "50",
+        "hex": "#FFEBEE",
+        "textShade": "#000000de"
+      },
+      {
+        "shade": "100",
+        "hex": "#FFCDD2",
+        "textShade": "#000000de"
+      },
+      {
+        "shade": "200",
+        "hex": "#EF9A9A",
+        "textShade": "#000000de"
+      },
+      {
+        "shade": "300",
+        "hex": "#E57373",
+        "textShade": "#000000de"
+      },
+      {
+        "shade": "400",
+        "hex": "#EF5350",
+        "textShade": "#ffffffde"
+      },
+      {
+        "shade": "500",
+        "hex": "#F44336",
+        "textShade": "#ffffffde"
+      },
+      {
+        "shade": "600",
+        "hex": "#E53935",
+        "textShade": "#ffffffde"
+      },
+      {
+        "shade": "700",
+        "hex": "#D32F2F",
+        "textShade": "#ffffffde"
+      },
+      {
+        "shade": "800",
+        "hex": "#C62828",
+        "textShade": "#ffffffde"
+      },
+      {
+        "shade": "900",
+        "hex": "#B71C1C",
+        "textShade": "#ffffffde"
+      },
+      {
+        "shade": "A100",
+        "hex": "#FF8A80",
+        "textShade": "#000000de"
+      },
+      {
+        "shade": "A200",
+        "hex": "#FF5252",
+        "textShade": "#ffffffde"
+      },
+      {
+        "shade": "A400",
+        "hex": "#FF1744",
+        "textShade": "#ffffffde"
+      },
+      {
+        "shade": "A700",
+        "hex": "#D50000",
+        "textShade": "#ffffffde"
+      }
+    ]
+  },
+  {
+    "name": "Blue Grey",
+    "palette": [
+      {
+        "shade": "50",
+        "hex": "#FFEBEE",
+        "textShade": "#000000de"
+      },
+      {
+        "shade": "100",
+        "hex": "#FFCDD2",
+        "textShade": "#000000de"
+      },
+      {
+        "shade": "200",
+        "hex": "#EF9A9A",
+        "textShade": "#000000de"
+      },
+      {
+        "shade": "300",
+        "hex": "#E57373",
+        "textShade": "#000000de"
+      },
+      {
+        "shade": "400",
+        "hex": "#EF5350",
+        "textShade": "#ffffffde"
+      },
+      {
+        "shade": "500",
+        "hex": "#F44336",
+        "textShade": "#ffffffde"
+      },
+      {
+        "shade": "600",
+        "hex": "#E53935",
+        "textShade": "#ffffffde"
+      },
+      {
+        "shade": "700",
+        "hex": "#D32F2F",
+        "textShade": "#ffffffde"
+      },
+      {
+        "shade": "800",
+        "hex": "#C62828",
+        "textShade": "#ffffffde"
+      },
+      {
+        "shade": "900",
+        "hex": "#B71C1C",
+        "textShade": "#ffffffde"
+      },
+      {
+        "shade": "A100",
+        "hex": "#FF8A80",
+        "textShade": "#000000de"
+      },
+      {
+        "shade": "A200",
+        "hex": "#FF5252",
+        "textShade": "#ffffffde"
+      },
+      {
+        "shade": "A400",
+        "hex": "#FF1744",
+        "textShade": "#ffffffde"
+      },
+      {
+        "shade": "A700",
+        "hex": "#D50000",
+        "textShade": "#ffffffde"
+      }
+    ]
+  }
+]

@@ -1,0 +1,32 @@
+<ng-container *ngIf="themeService.theme$ | async as
+theme">
+<mat-card>
+<pre>
+  $mat-primary-scheme: (
+    100: {{ theme.primaryLightColor }},
+    500: {{ theme.primaryColor }},
+    700: {{ theme.primaryDarkColor }},
+    contrast: (
+      100: $dark-primary-text,
+      500: $light-primary-text,
+      700: $light-primary-text,
+    )
+  );
+  $mat-accent-scheme: (
+    100: {{ theme.accentLightColor }},
+    500: {{ theme.accentColor }},
+    700: {{ theme.accentDarkColor }},
+    contrast: (
+      100: $dark-primary-text,
+      500: $light-primary-text,
+      700: $light-primary-text,
+    )
+  );
+  $mat-primary-palette: mat-palette($mat-primary-scheme);
+  $mat-accent-palette: mat-palette($mat-accent-scheme);
+
+  $app-light-theme: mat-light-theme($mat-primary-palette, $mat-accent-palette);
+  @include angular-material-theme($app-light-theme);
+</pre>
+</mat-card>
+</ng-container>
