@@ -11,8 +11,7 @@ import { ThemeService } from './theme.service';
 import { MatThemeComponent } from './mat-theme/mat-theme.component';
 import { PaletteComponent } from './palatte/palette.component';
 import { ColorPaletteComponent } from './color-palette/color-palette.component';
-import { ColorMaterialModule } from 'ngx-color/material';
-
+import { ColorPickerModule } from 'narik-angular-color-picker';
 @NgModule({
   declarations: [
     AppComponent,
@@ -35,6 +34,7 @@ import { ColorMaterialModule } from 'ngx-color/material';
     MatProgressBarModule,
     MatDividerModule,
     MatCardModule,
+    ColorPickerModule
   ],
   providers: [ThemeService],
   bootstrap: [AppComponent],

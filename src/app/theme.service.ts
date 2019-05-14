@@ -33,7 +33,7 @@ export class ThemeService {
 
   public setColor(colorName: string, color: string, isText = false) {
     const theme = {...this._themeSubject.getValue()};
-    theme[colorName + isText ? 'Text' : ''] = color;
+    theme[colorName] = color;
     this._themeSubject.next(theme);
   }
 }

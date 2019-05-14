@@ -1,5 +1,10 @@
 <div class="colorHex">
-    <input matInput size="8" value="{{value}}"></div>
-<input matInput class="colorPicker" type="color"
+    <input matInput size="10" readonly=true value="{{value}}"></div>
+<!-- <input matInput class="colorPicker" type="color"
 (change)="changeColor($event.target.value)"
-[value]="value">
+[value]="value"> -->
+<input class="colorPicker" [colorPicker]="value"
+        [cpPosition]="'left'"
+       (colorPickerChange)="changeColor($event)"
+       [style.background]="value"
+       [cpAlphaChannel]="'hex8'"/>

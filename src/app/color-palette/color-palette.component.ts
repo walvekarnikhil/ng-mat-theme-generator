@@ -1,6 +1,6 @@
 import { Component, OnInit, Output, EventEmitter, Input } from '@angular/core';
 import ColorPalette from '../../assets/material-palette.json';
-import { ColorMaterialModule } from 'ngx-color/material'; // <color-material></color-material>
+
 
 @Component({
   selector: 'app-color-palette',
@@ -9,7 +9,6 @@ import { ColorMaterialModule } from 'ngx-color/material'; // <color-material></c
 })
 export class ColorPaletteComponent implements OnInit {
   colors = ColorPalette;
-
   @Output()
   colorChange = new EventEmitter<string>();
 
@@ -20,6 +19,7 @@ export class ColorPaletteComponent implements OnInit {
   }
 
   changeColor(color: string) {
+    console.log(color);
     this.colorChange.emit(color);
   }
 }

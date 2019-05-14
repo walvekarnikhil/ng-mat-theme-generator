@@ -28,10 +28,10 @@
       <th>Text</th>
     </tr>
     <tr *ngFor="let paletteColor of PALETTE_COLORS">
-        <td width="*">{{paletteColor.title}} -> {{(themeService.theme$ | async)[paletteColor.textProperty]}}</td>
-        <td width="20%"><app-color-palette (colorChange)="changeColor(paletteColor.property, $event)"
+        <td width="*">{{paletteColor.title}}</td>
+        <td width="25%"><app-color-palette (colorChange)="changeColor(paletteColor.property, $event)"
         [value]="(themeService.theme$ | async)[paletteColor.property]"></app-color-palette></td>
-        <td width="20%"><app-color-palette (colorChange)="changeColor(paletteColor.textProperty, $event)"
+        <td width="25%"><app-color-palette (colorChange)="changeColor(paletteColor.textProperty, $event)"
         [value]="(themeService.theme$ | async)[paletteColor.textProperty]"></app-color-palette></td>
       </tr>
   </tbody>
