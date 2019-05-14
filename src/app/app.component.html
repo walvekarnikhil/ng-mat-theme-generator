@@ -1,41 +1,16 @@
 <mat-toolbar color="primary" class="mat-elevation-z6">
-  <img width="30" alt="Angular Logo" src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCAyNTAgMjUwIj4KICAgIDxwYXRoIGZpbGw9IiNERDAwMzEiIGQ9Ik0xMjUgMzBMMzEuOSA2My4ybDE0LjIgMTIzLjFMMTI1IDIzMGw3OC45LTQzLjcgMTQuMi0xMjMuMXoiIC8+CiAgICA8cGF0aCBmaWxsPSIjQzMwMDJGIiBkPSJNMTI1IDMwdjIyLjItLjFWMjMwbDc4LjktNDMuNyAxNC4yLTEyMy4xTDEyNSAzMHoiIC8+CiAgICA8cGF0aCAgZmlsbD0iI0ZGRkZGRiIgZD0iTTEyNSA1Mi4xTDY2LjggMTgyLjZoMjEuN2wxMS43LTI5LjJoNDkuNGwxMS43IDI5LjJIMTgzTDEyNSA1Mi4xem0xNyA4My4zaC0zNGwxNy00MC45IDE3IDQwLjl6IiAvPgogIDwvc3ZnPg==">
+  <img width="30" alt="Angular Logo"
+    src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCAyNTAgMjUwIj4KICAgIDxwYXRoIGZpbGw9IiNERDAwMzEiIGQ9Ik0xMjUgMzBMMzEuOSA2My4ybDE0LjIgMTIzLjFMMTI1IDIzMGw3OC45LTQzLjcgMTQuMi0xMjMuMXoiIC8+CiAgICA8cGF0aCBmaWxsPSIjQzMwMDJGIiBkPSJNMTI1IDMwdjIyLjItLjFWMjMwbDc4LjktNDMuNyAxNC4yLTEyMy4xTDEyNSAzMHoiIC8+CiAgICA8cGF0aCAgZmlsbD0iI0ZGRkZGRiIgZD0iTTEyNSA1Mi4xTDY2LjggMTgyLjZoMjEuN2wxMS43LTI5LjJoNDkuNGwxMS43IDI5LjJIMTgzTDEyNSA1Mi4xem0xNyA4My4zaC0zNGwxNy00MC45IDE3IDQwLjl6IiAvPgogIDwvc3ZnPg==">
   <span>Mat Theme Generator</span>
   <span class="spacer"></span>
-  <button mat-icon-button (click)="exportTheme()"><mat-icon>arrow_upward</mat-icon></button>
+  <button mat-icon-button (click)="exportTheme()">
+    <mat-icon>arrow_upward</mat-icon>
+  </button>
 </mat-toolbar>
 <div fxLayout="row" fxLayoutAlign="space-between start" class="padding-top-20">
-    <table>
-        <tr>
-          <td class="widgetLabel">
-            Checkbox
-          </td>
-          <td>
-              <div class="inline-block margin-right-40"><mat-checkbox>Unchecked</mat-checkbox></div>
-              <div class="inline-block margin-right-40"><mat-checkbox [checked]="true">Checked</mat-checkbox></div>
-              <div class="inline-block margin-right-40"><mat-checkbox [indeterminate]="true">Indeterminate</mat-checkbox></div>
-              <div class="inline-block margin-right-40"><mat-checkbox disabled="true">Disabled</mat-checkbox></div>
-          </td>
-        </tr>
-        <tr>
-          <td class="widgetLabel">Chips</td>
-          <td>
-              <mat-chip-list>
-                  <mat-chip>One fish</mat-chip>
-                  <mat-chip>Two fish</mat-chip>
-                  <mat-chip color="primary" selected>Primary fish</mat-chip>
-                  <mat-chip color="accent" selected>Accent fish</mat-chip>
-              </mat-chip-list>
-          </td>
-          <tr>
-              <td class="widgetLabel">Progress bar</td>
-              <td>
-                <mat-progress-bar mode="determinate" value="40"></mat-progress-bar>
-              </td>
-          </tr>
-      </table>
-<div fxFlex="30">
-  <h2>Customize Theme</h2>
-  <app-palette></app-palette>
-</div>
+  <app-mat-widgets></app-mat-widgets>
+  <div fxFlex="30">
+    <h2>Customize Theme</h2>
+    <app-palette></app-palette>
+  </div>
 </div>
