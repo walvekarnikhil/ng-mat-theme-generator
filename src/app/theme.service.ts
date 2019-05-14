@@ -9,12 +9,12 @@ const DEFAULT_THEME = {
   accentColor: '#26a69a',
   accentLightColor: '#64d8cb',
   accentDarkColor: '#00766c',
-  primaryColorText: '#ffffffde',
-  primaryLightColorText: '#000000de',
-  primaryDarkColorText: '#ffffffde',
-  accentColorText: '#ffffffde',
-  accentLightColorText: '#000000de',
-  accentDarkColorText: '#ffffffde',
+  primaryColorText: '#ffffff',
+  primaryLightColorText: '#000000',
+  primaryDarkColorText: '#ffffff',
+  accentColorText: '#ffffff',
+  accentLightColorText: '#000000',
+  accentDarkColorText: '#ffffff',
 } as Theme;
 
 @Injectable({
