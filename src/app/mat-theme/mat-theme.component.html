@@ -1,45 +1,52 @@
 <ng-container *ngIf="themeService.theme$ | async as
 theme">
 <mat-card>
-<pre>
-  <code>
-    @import '~@angular/material/theming';
-    @include mat-core();
+    <mat-card-header>
+        <mat-card-title>Generated theme</mat-card-title>
+        <mat-card-subtitle>Copy following code to style.scss</mat-card-subtitle>
+      </mat-card-header>
+    <button mat-mini-fab color="accent" class="copyBtn" (click)="cp.copy()">
+        <mat-icon>assignment</mat-icon>
+    </button>
+  <ngx-prism [language]="'css'" ngxCopyPaste #cp="copy">
+    <pre >
+@import '~@angular/material/theming';
+@include mat-core();
 
-    $mat-primary-scheme: (
-      100: {{ theme.primaryLightColor }},
-      500: {{ theme.primaryColor }},
-      700: {{ theme.primaryDarkColor }},
-      contrast: (
-        100: {{ theme.primaryLightColorText }},
-        500: {{ theme.primaryColorText }},
-        700: {{ theme.primaryDarkColorText }},
-      )
-    );
-    $mat-accent-scheme: (
-      100: {{ theme.accentLightColor }},
-      500: {{ theme.accentColor }},
-      700: {{ theme.accentDarkColor }},
-      contrast: (
-        100: {{ theme.accentLightColorText }},
-        500: {{ theme.accentColorText }},
-        700: {{ theme.accentDarkColorText }},
-      )
-    );
-    $mat-primary-palette: mat-palette($mat-primary-scheme);
-    $mat-accent-palette: mat-palette($mat-accent-scheme);
+$mat-primary-scheme: (
+  100: {{ theme.primaryLightColor }},
+  500: {{ theme.primaryColor }},
+  700: {{ theme.primaryDarkColor }},
+  contrast: (
+    100: {{ theme.primaryLightColorText }},
+    500: {{ theme.primaryColorText }},
+    700: {{ theme.primaryDarkColorText }},
+  )
+);
+$mat-accent-scheme: (
+  100: {{ theme.accentLightColor }},
+  500: {{ theme.accentColor }},
+  700: {{ theme.accentDarkColor }},
+  contrast: (
+    100: {{ theme.accentLightColorText }},
+    500: {{ theme.accentColorText }},
+    700: {{ theme.accentDarkColorText }},
+  )
+);
+$mat-primary-palette: mat-palette($mat-primary-scheme);
+$mat-accent-palette: mat-palette($mat-accent-scheme);
 
-    $app-light-theme: mat-light-theme($mat-primary-palette, $mat-accent-palette);
+$app-light-theme: mat-light-theme($mat-primary-palette, $mat-accent-palette);
 
-    @include angular-material-theme($app-light-theme);
+@include angular-material-theme($app-light-theme);
 
-    // following section is for dark mode.
-    // use appropriate class name for darkMode
-    $app-dark-theme: mat-dark-theme($mat-primary-palette, $mat-accent-palette);
-    .darkMode {{ '{' }}
-      @include angular-material-theme($app-dark-theme);
-    {{ '}' }}
-  </code>
-</pre>
+// following section is for dark mode.
+// use appropriate class name for darkMode
+$app-dark-theme: mat-dark-theme($mat-primary-palette, $mat-accent-palette);
+.darkMode {{ '{' }}
+  @include angular-material-theme($app-dark-theme);
+{{ '}' }}
+    </pre>
+  </ngx-prism>
 </mat-card>
 </ng-container>

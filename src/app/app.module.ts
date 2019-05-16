@@ -16,6 +16,8 @@ import { ColorPaletteComponent } from './color-palette/color-palette.component';
 import { ColorPickerModule } from 'narik-angular-color-picker';
 import { AutocompleteExampleComponent } from './mat-widgets/autocomplete-example/autocomplete-example.component';
 import { ReactiveFormsModule, FormsModule } from '@angular/forms';
+import { PrismModule } from '@ngx-prism/core';
+import {NgxCopyPasteModule} from 'ngx-copypaste';
 @NgModule({
   declarations: [
     AppComponent,
@@ -45,10 +47,12 @@ import { ReactiveFormsModule, FormsModule } from '@angular/forms';
     ReactiveFormsModule,
     FormsModule,
     MatInputModule,
-    MatSlideToggleModule
+    MatSlideToggleModule,
+    PrismModule,
+    NgxCopyPasteModule
   ],
   providers: [ThemeService],
   bootstrap: [AppComponent],
-  entryComponents: [MatThemeComponent]
+  entryComponents: [MatThemeComponent],
 })
 export class AppModule { }
