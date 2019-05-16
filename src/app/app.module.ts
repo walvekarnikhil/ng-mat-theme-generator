@@ -5,7 +5,8 @@ import { FlexLayoutModule } from '@angular/flex-layout';
 
 import { MatToolbarModule, MatCheckboxModule, MatListModule, MatButtonModule,
   MatIconModule, MatChipsModule, MatDialogModule, MatProgressBarModule,
-  MatDividerModule, MatCardModule, MatFormFieldModule, MatAutocompleteModule, MatInputModule } from '@angular/material';
+  MatDividerModule, MatCardModule, MatFormFieldModule, MatAutocompleteModule,
+  MatInputModule, MatSliderModule, MatSlideToggleModule } from '@angular/material';
 import { AppComponent } from './app.component';
 import { MatWidgetsComponent } from './mat-widgets/mat-widgets.component';
 import { ThemeService } from './theme.service';
@@ -43,7 +44,8 @@ import { ReactiveFormsModule, FormsModule } from '@angular/forms';
     MatAutocompleteModule,
     ReactiveFormsModule,
     FormsModule,
-    MatInputModule
+    MatInputModule,
+    MatSlideToggleModule
   ],
   providers: [ThemeService],
   bootstrap: [AppComponent],

@@ -7,6 +7,11 @@ html, body {
   height: 100vh;
 }
 
+body.darkMode {
+  background-color: #303030;
+  color: rgba(255, 255, 255, 0.7);
+}
+
 div {
   position: relative;
   width: auto;
@@ -30,9 +35,16 @@ div {
 @import '~@angular/material/theming';
 @include mat-core();
 $mat-primary-scheme: (
-  100: #ffd8d8,
-  500: #d2958c,
-  700: #a00928,
+  50: var(--primaryLightColor),
+  100: var(--primaryLightColor),
+  200: var(--primaryLightColor),
+  300: var(--primaryLightColor),
+  400: var(--primaryLightColor),
+  500: var(--primaryColor),
+  600: var(--primaryDarkColor),
+  700: var(--primaryDarkColor),
+  800: var(--primaryDarkColor),
+  900: var(--primaryDarkColor),
   contrast: (
     100: $dark-primary-text,
     500: $light-primary-text,
@@ -40,73 +52,36 @@ $mat-primary-scheme: (
   )
 );
 $mat-accent-scheme: (
-  100: #64d8cb,
-  500: #05f1d2,
-  700: #00766c,
+  50: var(--accentLightColor),
+  100: var(--accentLightColor),
+  200: var(--accentLightColor),
+  300: var(--accentLightColor),
+  400: var(--accentLightColor),
+  500: var(--accentColor),
+  600: var(--accentDarkColor),
+  700: var(--accentDarkColor),
+  800: var(--accentDarkColor),
+  900: var(--accentDarkColor),
   contrast: (
     100: $dark-primary-text,
     500: $dark-primary-text,
     700: $light-primary-text,
   )
 );
+
 $mat-primary-palette: mat-palette($mat-primary-scheme);
 $mat-accent-palette: mat-palette($mat-accent-scheme);
 
 $app-light-theme: mat-light-theme($mat-primary-palette, $mat-accent-palette);
+$app-dark-theme: mat-dark-theme($mat-primary-palette, $mat-accent-palette);
 @include angular-material-theme($app-light-theme);
-// $candy-app-primary: mat-palette($mat-orange);
-// $candy-app-accent:  mat-palette($mat-pink, A200, A100, A400);
-
-// // The warn palette is optional (defaults to red).
-// $candy-app-warn:    mat-palette($mat-red);
-
-// // Create the theme object (a Sass map containing all of the palettes).
-// $candy-app-theme: mat-light-theme($candy-app-primary, $candy-app-accent, $candy-app-warn);
-
-// // Include theme styles for core and each component used in your app.
-// // Alternatively, you can import and @include the theme mixins for each component
-// // that you are using.
-// @include angular-material-theme($candy-app-theme);
-
-body {
-  --primaryColor: #FF9800;
-  --primaryLightColor: #FFE0B2;
-  --primaryColorText: black;
-  --accentColorText: black;
+.darkMode {
+  @include angular-material-theme($app-dark-theme);
+  .mat-slide-toggle.mat-checked .mat-slide-toggle-bar {
+    background-color: rgba( var(--accentLightColorRGB), 0.5);
+  }
 }
-.mat-checkbox-indeterminate.mat-accent .mat-checkbox-background, .mat-checkbox-checked.mat-accent .mat-checkbox-background {
-  background-color: var(--primaryColor);
-}
-
-.mat-toolbar.mat-primary {
-  background: var(--primaryColor);
-  color: var(--primaryColorText);
-}
-
-.mat-chip.mat-standard-chip.mat-chip-selected.mat-primary {
-  background-color: var(--primaryColor);
-  color:var(--primaryColorText);
-}
-.mat-chip.mat-standard-chip.mat-chip-selected.mat-accent {
-  background-color: var(--accentColor);
-  color:var(--accentColorText);
-}
-.mat-progress-bar-background {
-  fill: var(--primaryLightColor);
-}
-.mat-progress-bar-fill::after {
-  background-color: var(--primaryColor);
-}
-.mat-progress-bar-buffer {
-  background-color: var(--primaryLightColor);
-}
-.mat-input-element {
-  caret-color: var(--primaryColor);
-}
-
-.mat-form-field.mat-focused .mat-form-field-ripple {
-  background-color:  var(--primaryColor);
-}
-.mat-form-field.mat-focused .mat-form-field-label {
-  color: var(--primaryColor);
+// this does not work, we have to create new variable with just RGB values and use that over here.
+.mat-slide-toggle.mat-checked .mat-slide-toggle-bar {
+  background-color: rgba( var(--accentColorRGB), 0.5);
 }

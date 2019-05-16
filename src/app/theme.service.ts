@@ -23,6 +23,10 @@ const DEFAULT_THEME = {
 export class ThemeService {
   private _themeSubject: BehaviorSubject<Theme> = new BehaviorSubject(DEFAULT_THEME);
   public theme$ = this._themeSubject.asObservable();
+
+  private _isDarkModeSubject: BehaviorSubject<boolean> = new BehaviorSubject(false);
+  public isDarkMode$ = this._isDarkModeSubject.asObservable();
+
   constructor() { }
 
   public setPrimaryColor(color: string) {
@@ -35,5 +39,9 @@ export class ThemeService {
     const theme = {...this._themeSubject.getValue()};
     theme[colorName] = color;
     this._themeSubject.next(theme);
+  }
+
+  setDarkMode(isDarkMode: any): any {
+    this._isDarkModeSubject.next(isDarkMode);
   }
 }

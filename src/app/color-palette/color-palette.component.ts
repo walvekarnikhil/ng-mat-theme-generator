@@ -19,7 +19,6 @@ export class ColorPaletteComponent implements OnInit {
   }
 
   changeColor(color: string) {
-    console.log(color);
     this.colorChange.emit(color);
   }
 }
