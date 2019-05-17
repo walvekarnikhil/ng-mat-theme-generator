@@ -43,7 +43,7 @@
   <tr>
     <td class="widgetLabel">Progress bar</td>
     <td>
-      <mat-progress-bar mode="determinate" value="40"></mat-progress-bar>
+      <app-progressbar></app-progressbar>
     </td>
   </tr>
   <tr>
@@ -56,6 +56,28 @@
     <td class="widgetLabel">Slide toggle</td>
     <td>
       <mat-slide-toggle>Slide me!</mat-slide-toggle>
+    </td>
+  </tr>
+  <tr>
+    <td class="widgetLabel">Badge</td>
+    <td>
+        <span matBadge="4" matBadgeOverlap="false" class="margin-right-40">Default</span>
+        <span matBadge="9" matBadgeOverlap="false" class="margin-right-40" matBadgeColor="primary">Primary</span>
+        <span matBadge="3" matBadgeOverlap="false" class="margin-right-40" matBadgeColor="accent">Accent</span>
+        <span matBadge="5" matBadgeOverlap="false" class="margin-right-40" matBadgeColor="warn">Warn</span>
+    </td>
+  </tr>
+  <tr>
+    <td class="widgetLabel">Button</td>
+    <td>
+        <div fxLayout="row" fxLayoutAlign="space-between start" >
+        <button class="margin-right-40" mat-raised-button>Basic</button>
+        <button class="margin-right-40" mat-raised-button color="primary">Primary</button>
+        <button class="margin-right-40" mat-raised-button color="accent">Accent</button>
+        <button class="margin-right-40" mat-raised-button color="warn">Warn</button>
+        <button class="margin-right-40" mat-raised-button disabled>Disabled</button>
+        <a class="margin-right-40" mat-raised-button routerLink=".">Link</a>
+        </div>
     </td>
   </tr>
 </table>

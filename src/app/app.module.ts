@@ -6,7 +6,7 @@ import { FlexLayoutModule } from '@angular/flex-layout';
 import { MatToolbarModule, MatCheckboxModule, MatListModule, MatButtonModule,
   MatIconModule, MatChipsModule, MatDialogModule, MatProgressBarModule,
   MatDividerModule, MatCardModule, MatFormFieldModule, MatAutocompleteModule,
-  MatInputModule, MatSliderModule, MatSlideToggleModule } from '@angular/material';
+  MatInputModule, MatSliderModule, MatSlideToggleModule, MatExpansionModule, MatBadgeModule } from '@angular/material';
 import { AppComponent } from './app.component';
 import { MatWidgetsComponent } from './mat-widgets/mat-widgets.component';
 import { ThemeService } from './theme.service';
@@ -18,6 +18,7 @@ import { AutocompleteExampleComponent } from './mat-widgets/autocomplete-example
 import { ReactiveFormsModule, FormsModule } from '@angular/forms';
 import { PrismModule } from '@ngx-prism/core';
 import {NgxCopyPasteModule} from 'ngx-copypaste';
+import { ProgressbarComponent } from './mat-widgets/progressbar/progressbar.component';
 @NgModule({
   declarations: [
     AppComponent,
@@ -25,7 +26,8 @@ import {NgxCopyPasteModule} from 'ngx-copypaste';
     MatThemeComponent,
     PaletteComponent,
     ColorPaletteComponent,
-    AutocompleteExampleComponent
+    AutocompleteExampleComponent,
+    ProgressbarComponent
   ],
   imports: [
     BrowserModule,
@@ -49,7 +51,9 @@ import {NgxCopyPasteModule} from 'ngx-copypaste';
     MatInputModule,
     MatSlideToggleModule,
     PrismModule,
-    NgxCopyPasteModule
+    NgxCopyPasteModule,
+    MatExpansionModule,
+    MatBadgeModule
   ],
   providers: [ThemeService],
   bootstrap: [AppComponent],

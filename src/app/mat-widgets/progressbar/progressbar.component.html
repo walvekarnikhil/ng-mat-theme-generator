@@ -1,0 +1,54 @@
+<mat-accordion>
+  <mat-expansion-panel>
+    <mat-expansion-panel-header>
+      <mat-panel-title>
+        Determinate
+      </mat-panel-title>
+      <mat-panel-description>
+        <mat-progress-bar mode="determinate" [value]="40"></mat-progress-bar>
+      </mat-panel-description>
+    </mat-expansion-panel-header>
+    <mat-progress-bar mode="determinate" color="accent" [value]="70"></mat-progress-bar><br>
+    <mat-progress-bar mode="determinate" color="warn" [value]="10"></mat-progress-bar>
+    <mat-divider></mat-divider>
+  </mat-expansion-panel>
+  <mat-expansion-panel>
+    <mat-expansion-panel-header>
+      <mat-panel-title>
+        Indeterminate
+      </mat-panel-title>
+      <mat-panel-description>
+        <mat-progress-bar mode="indeterminate"></mat-progress-bar>
+      </mat-panel-description>
+    </mat-expansion-panel-header>
+    <mat-progress-bar mode="indeterminate" color="accent"></mat-progress-bar><br>
+    <mat-progress-bar mode="indeterminate" color="warn"></mat-progress-bar>
+    <mat-divider></mat-divider>
+  </mat-expansion-panel>
+  <mat-expansion-panel>
+    <mat-expansion-panel-header>
+      <mat-panel-title>
+        Buffer
+      </mat-panel-title>
+      <mat-panel-description>
+        <mat-progress-bar mode="buffer" [value]="40" [bufferValue]="50"></mat-progress-bar>
+      </mat-panel-description>
+    </mat-expansion-panel-header>
+    <mat-progress-bar mode="buffer" color="accent" [value]="70" [bufferValue]="87"></mat-progress-bar><br>
+    <mat-progress-bar mode="buffer" color="warn" [value]="10" [bufferValue]="33"></mat-progress-bar>
+    <mat-divider></mat-divider>
+  </mat-expansion-panel>
+  <mat-expansion-panel>
+    <mat-expansion-panel-header>
+      <mat-panel-title>
+        Query
+      </mat-panel-title>
+      <mat-panel-description>
+        <mat-progress-bar mode="query"></mat-progress-bar>
+      </mat-panel-description>
+    </mat-expansion-panel-header>
+    <mat-progress-bar mode="query" color="accent"></mat-progress-bar><br>
+    <mat-progress-bar mode="query" color="warn"></mat-progress-bar>
+    <mat-divider></mat-divider>
+  </mat-expansion-panel>
+</mat-accordion>
