@@ -1,4 +1,11 @@
 .widgetTable {
-  padding: 10px 0;
-  border-spacing: 20px;
+  padding: 40px;
+  width: 100%;
+}
+.widgetTable td {
+  padding: 10px;
+  border-bottom: 1px solid darkgray;
+}
+.darkMode .widgetTable td {
+  border-bottom-color:  rgba(255, 255, 255, 0.7);
 }

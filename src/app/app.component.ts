@@ -2,7 +2,7 @@ import { Component, AfterViewInit, Renderer2, OnDestroy } from '@angular/core';
 import { ThemeService } from './theme.service';
 import { MatDialog, MatSlideToggleChange } from '@angular/material';
 import { MatThemeComponent } from './mat-theme/mat-theme.component';
-import { ColorScheme } from './theme-model';
+import { Theme } from './theme-model';
 import { Subscription } from 'rxjs';
 
 @Component({
@@ -33,20 +33,16 @@ export class AppComponent implements AfterViewInit, OnDestroy {
 
   private separateRGB(color: string) {
     if (color.startsWith('#')) {
-      const colorValues = color.match(/#([A-Za-z0-9]{2})([A-Za-z0-9]{2})([A-Za-z0-9]{2})/);
-    const r = parseInt(colorValues[1], 16);
-    const g = parseInt(colorValues[2], 16);
-    const b = parseInt(colorValues[3], 16);
-    return [r, g, b];
-    // return colorValues && [colorValues[1], colorValues[2], colorValues[3]];
+      const regEx = color.length === 4 ? /#([A-Za-z0-9])([A-Za-z0-9])([A-Za-z0-9])/ : /#([A-Za-z0-9]{2})([A-Za-z0-9]{2})([A-Za-z0-9]{2})/;
+      const colorValues = color.match(regEx);
+      const r = parseInt(colorValues[1], 16);
+      const g = parseInt(colorValues[2], 16);
+      const b = parseInt(colorValues[3], 16);
+      return [r, g, b];
     }
     return null;
-    // const r = parseInt('ff', 16);
-    // const g = parseInt('ff', 16);
-    // const b = parseInt('ff', 16);
-    // return [r, g, b];
   }
-    private setStyleVars(colorScheme: ColorScheme) {
+    private setStyleVars(colorScheme: Theme) {
     for (const key in colorScheme) {
       if (colorScheme.hasOwnProperty(key)) {
         if (colorScheme[key] instanceof Object) {

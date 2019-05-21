@@ -5,7 +5,7 @@
 [value]="value"> -->
 <input class="colorPicker" [colorPicker]="value"
         [cpPosition]="'left'"
+        [cpOutputFormat]="'hex'"
         [cpAlphaChannel]="'disabled'"
        (colorPickerChange)="changeColor($event)"
-       [style.background]="value"
-       [cpAlphaChannel]="'hex8'"/>
+       [style.background]="value"/>
