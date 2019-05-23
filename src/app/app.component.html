@@ -1,21 +1,30 @@
 <div [ngClass]="{darkMode: isDarkMode}">
-<mat-toolbar color="primary" class="mat-elevation-z6">
-  <img width="30" alt="Angular Logo"
-    src="../assets/mat-logo.png">
-  <span>Mat Theme Generator</span>
-  <span class="spacer"></span>
-  <button mat-icon-button (click)="exportTheme()">
-    <mat-icon>arrow_upward</mat-icon>
-  </button>
-</mat-toolbar>
-<div fxLayout="row" fxLayoutAlign="space-between start" class="padding-top-20">
-  <app-mat-widgets fxFlex></app-mat-widgets>
-  <div fxFlex="35" class="pallete mat-elevation-z8">
-    <h2>Customize Theme</h2>
-    <h4>
-      <span>Light&nbsp;<mat-slide-toggle (change)="toggleDarkMode($event)"> Dark</mat-slide-toggle></span>
-    </h4>
-    <app-palette></app-palette>
+  <mat-toolbar color="primary" class="mat-elevation-z6">
+    <img width="30" alt="Angular Logo" src="../assets/mat-logo.png">
+    <span>Mat Theme Generator</span>
+    <span class="spacer"></span>
+    <button mat-icon-button (click)="exportTheme()">
+      <mat-icon>arrow_upward</mat-icon>
+    </button>
+  </mat-toolbar>
+  <div fxLayout="row" fxLayoutAlign="space-between start" class="padding-top-20">
+    <div fxFlex class="themePreview">
+      <h2>Light <mat-slide-toggle (change)="toggleDarkMode($event)"> Dark</mat-slide-toggle>
+      </h2>
+      <mat-divider></mat-divider>
+      <app-mat-widgets></app-mat-widgets>
+    </div>
+    <div fxFlex="35">
+      <mat-card class="mat-elevation-z8">
+        <mat-card-header>
+          <mat-card-title>
+            Customize Theme
+          </mat-card-title>
+        </mat-card-header>
+        <mat-card-content>
+          <app-palette></app-palette>
+        </mat-card-content>
+      </mat-card>
+    </div>
   </div>
-</div>
 </div>
