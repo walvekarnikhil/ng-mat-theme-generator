@@ -1,0 +1,26 @@
+<div fxLayout="row" fxLayoutAlign="space-between start" class="padding-top-20">
+    <div fxFlex class="themePreview">
+      <h2>Light <mat-slide-toggle
+        [(ngModel)]="darkMode"
+        angulartics2On="click"
+        angularticsAction="click"
+        [angularticsLabel]="darkMode ? 'LightMode' : 'DarkMode'"
+        angularticsCategory="ViewMode"
+        (change)="toggleDarkMode($event)"> Dark</mat-slide-toggle>
+      </h2>
+      <mat-divider></mat-divider>
+      <app-mat-widgets></app-mat-widgets>
+    </div>
+    <div fxFlex="35">
+      <mat-card class="mat-elevation-z8">
+        <mat-card-header>
+          <mat-card-title>
+            Customize Theme
+          </mat-card-title>
+        </mat-card-header>
+        <mat-card-content>
+          <app-palette></app-palette>
+        </mat-card-content>
+      </mat-card>
+    </div>
+  </div>

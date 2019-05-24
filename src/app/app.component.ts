@@ -4,6 +4,9 @@ import { MatDialog, MatSlideToggleChange } from '@angular/material';
 import { MatThemeComponent } from './mat-theme/mat-theme.component';
 import { Theme } from './theme-model';
 import { Subscription } from 'rxjs';
+import { Angulartics2GoogleGlobalSiteTag } from 'angulartics2/gst';
+import { Angulartics2 } from 'angulartics2';
+
 
 @Component({
   selector: 'app-root',
@@ -17,7 +20,10 @@ export class AppComponent implements AfterViewInit, OnDestroy {
 
   constructor(public themeService: ThemeService,
     public dialog: MatDialog,
-    private renderer: Renderer2) {
+    private renderer: Renderer2,
+    angulartics2GoogleGlobalSiteTag: Angulartics2GoogleGlobalSiteTag) {
+
+      angulartics2GoogleGlobalSiteTag.startTracking();
       this._isDarkModeSubscription = this.themeService.isDarkMode$.subscribe((isDarkMode) => {
         if (isDarkMode) {
           this.renderer.addClass(document.body, 'darkMode');
@@ -61,14 +67,6 @@ export class AppComponent implements AfterViewInit, OnDestroy {
     });
   }
 
-  changePrimaryColor(color: string) {
-    this.themeService.setPrimaryColor(color);
-  }
-
-  changeColor(event) {
-    console.log(event);
-  }
-
   exportTheme() {
     this.dialog.open(MatThemeComponent, {
       height: '80%',
@@ -76,8 +74,4 @@ export class AppComponent implements AfterViewInit, OnDestroy {
     });
   }
 
-  toggleDarkMode(slideToggleChangeEvent: MatSlideToggleChange) {
-    // this.isDarkMode = slideToggleChangeEvent.checked;
-    this.themeService.setDarkMode(slideToggleChangeEvent.checked);
-  }
 }

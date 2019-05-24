@@ -6,7 +6,7 @@ import { FlexLayoutModule } from '@angular/flex-layout';
 import { MatToolbarModule, MatCheckboxModule, MatListModule, MatButtonModule,
   MatIconModule, MatChipsModule, MatDialogModule, MatProgressBarModule,
   MatDividerModule, MatCardModule, MatFormFieldModule, MatAutocompleteModule,
-  MatInputModule, MatSliderModule, MatSlideToggleModule, MatExpansionModule, MatBadgeModule } from '@angular/material';
+  MatInputModule, MatSlideToggleModule, MatExpansionModule, MatBadgeModule } from '@angular/material';
 import { AppComponent } from './app.component';
 import { MatWidgetsComponent } from './mat-widgets/mat-widgets.component';
 import { ThemeService } from './theme.service';
@@ -19,6 +19,13 @@ import { ReactiveFormsModule, FormsModule } from '@angular/forms';
 import { PrismModule } from '@ngx-prism/core';
 import {NgxCopyPasteModule} from 'ngx-copypaste';
 import { ProgressbarComponent } from './mat-widgets/progressbar/progressbar.component';
+import { Angulartics2Module } from 'angulartics2';
+import { HomeComponent } from './home/home.component';
+import { Routes, RouterModule } from '@angular/router';
+
+const ROUTES: Routes = [
+  { path: '',      component: HomeComponent },
+];
 @NgModule({
   declarations: [
     AppComponent,
@@ -27,7 +34,8 @@ import { ProgressbarComponent } from './mat-widgets/progressbar/progressbar.comp
     PaletteComponent,
     ColorPaletteComponent,
     AutocompleteExampleComponent,
-    ProgressbarComponent
+    ProgressbarComponent,
+    HomeComponent
   ],
   imports: [
     BrowserModule,
@@ -53,7 +61,9 @@ import { ProgressbarComponent } from './mat-widgets/progressbar/progressbar.comp
     PrismModule,
     NgxCopyPasteModule,
     MatExpansionModule,
-    MatBadgeModule
+    MatBadgeModule,
+    RouterModule.forRoot(ROUTES),
+    Angulartics2Module.forRoot(),
   ],
   providers: [ThemeService],
   bootstrap: [AppComponent],

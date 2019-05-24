@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { ThemeService } from '../theme.service';
+import { Angulartics2 } from 'angulartics2';
 
 @Component({
   selector: 'app-palette',
@@ -40,12 +41,15 @@ export class PaletteComponent implements OnInit {
     }
   ];
 
-  constructor(public themeService: ThemeService) { }
+  constructor(public themeService: ThemeService, private angulartics: Angulartics2) { }
 
   ngOnInit() {
   }
 
   changeColor(colorType: string, color: string) {
     this.themeService.setColor(colorType, color);
+    this.angulartics.eventTrack.next(
+      { action: 'changeColor', properties: { category: 'customizeTheme', label: colorType }}
+    );
   }
 }

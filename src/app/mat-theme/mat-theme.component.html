@@ -5,7 +5,11 @@ theme">
         <mat-card-title>Generated theme</mat-card-title>
         <mat-card-subtitle>Copy following code to style.scss</mat-card-subtitle>
       </mat-card-header>
-    <button mat-mini-fab color="accent" class="copyBtn" (click)="cp.copy()">
+    <button mat-mini-fab color="accent" class="copyBtn" (click)="cp.copy()"
+      angulartics2On="click"
+      angularticsAction="Copy"
+      angularticsLabel="Copy"
+      angularticsCategory="Export theme">
         <mat-icon>assignment</mat-icon>
     </button>
   <ngx-prism [language]="'css'" ngxCopyPaste #cp="copy">

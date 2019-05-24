@@ -25,6 +25,7 @@
     "@angular/router": "^7.2.15",
     "@ngx-prism/core": "^2.0.1",
     "@types/prismjs": "^1.9.0",
+    "angulartics2": "^7.5.2",
     "core-js": "^2.5.4",
     "lodash-es": "^4.17.11",
     "narik-angular-color-picker": "^2.0.9",
