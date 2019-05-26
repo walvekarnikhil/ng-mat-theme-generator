@@ -6,6 +6,7 @@ import { Theme } from './theme-model';
 import { Subscription } from 'rxjs';
 import { Angulartics2GoogleGlobalSiteTag } from 'angulartics2/gst';
 import { Angulartics2 } from 'angulartics2';
+import { Breakpoints, BreakpointObserver } from '@angular/cdk/layout';
 
 
 @Component({
@@ -16,13 +17,21 @@ import { Angulartics2 } from 'angulartics2';
 export class AppComponent implements AfterViewInit, OnDestroy {
   title = 'mat-theme-generator';
   isDarkMode = false;
+  isLayoutNotSupported = false;
+  dialogDismissed = false;
   private _isDarkModeSubscription: Subscription;
 
   constructor(public themeService: ThemeService,
     public dialog: MatDialog,
     private renderer: Renderer2,
-    angulartics2GoogleGlobalSiteTag: Angulartics2GoogleGlobalSiteTag) {
-
+    angulartics2GoogleGlobalSiteTag: Angulartics2GoogleGlobalSiteTag,
+    breakpointObserver: BreakpointObserver) {
+      breakpointObserver.observe([
+        Breakpoints.Handset,
+        Breakpoints.TabletPortrait
+      ]).subscribe(result => {
+        this.isLayoutNotSupported = result.matches;
+      });
       angulartics2GoogleGlobalSiteTag.startTracking();
       this._isDarkModeSubscription = this.themeService.isDarkMode$.subscribe((isDarkMode) => {
         if (isDarkMode) {
@@ -73,5 +82,4 @@ export class AppComponent implements AfterViewInit, OnDestroy {
       width: '80%'
     });
   }
-
 }

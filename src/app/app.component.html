@@ -13,4 +13,22 @@
     </button>
   </mat-toolbar>
   <router-outlet></router-outlet>
+  <div id="layoutNotSupported" *ngIf="isLayoutNotSupported && !dialogDismissed">
+    <!-- <div class="overlayContents"> -->
+      <mat-card  class="overlayContents">
+        <mat-card-header>
+          <mat-card-title>
+              Mobile / Table support on it's way
+          </mat-card-title>
+        </mat-card-header>
+        <mat-card-content>
+            We are working on the responsive layout, please check back later.<br>
+            You can still check out the tool, but it could limit the experience.
+        </mat-card-content>
+        <mat-card-actions [align]="'end'">
+            <button class="margin-right-40" mat-raised-button color="warn"
+              (click)="dialogDismissed = true">Dismiss</button>
+        </mat-card-actions>
+      </mat-card>
+  </div>
 </div>
