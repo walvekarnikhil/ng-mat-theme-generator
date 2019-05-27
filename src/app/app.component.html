@@ -3,13 +3,14 @@
     <img width="30" alt="Angular Logo" src="./assets/mat-logo.png">
     <span>Mat Theme Generator</span>
     <span class="spacer"></span>
-    <button mat-icon-button
+    <button mat-raised-button
+      color="warn"
       (click)="exportTheme()"
       angulartics2On="click"
       angularticsAction="Export"
       angularticsLabel="Export"
       angularticsCategory="Export theme">
-        <mat-icon>arrow_upward</mat-icon>
+        Export <mat-icon>arrow_downward</mat-icon>
     </button>
   </mat-toolbar>
   <router-outlet></router-outlet>
