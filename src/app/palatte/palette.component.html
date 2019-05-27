@@ -1,19 +1,4 @@
-<!-- <mat-list>
-    <h3 fxLayout="row" ><mat-icon>palette</mat-icon>
-      <span class="padding-left-20">Palette</span>
-    </h3>
-    <mat-divider></mat-divider>
-    <mat-list-item *ngFor="let paletteColor of PALETTE_COLORS">
-          <div mat-line>
-            <div fxFlex>{{paletteColor.title}}</div>
-            <app-color-palette (colorChange)="changeColor(paletteColor.property, $event)"
-          [value]="(themeService.theme$ | async)[paletteColor.property]"></app-color-palette>
-          <app-color-palette (colorChange)="changeColor(paletteColor.property, $event)"
-          [value]="(themeService.theme$ | async)[paletteColor.property]"></app-color-palette>
-          </div>
-    </mat-list-item>
-</mat-list> -->
-<table class="listing" width="100%">
+<table class="listing" width="100%" cellspacing="0">
   <thead>
     <th colspan="3">
         <h3 fxLayout="row" ><mat-icon>palette</mat-icon>
@@ -29,9 +14,9 @@
     </tr>
     <tr *ngFor="let paletteColor of PALETTE_COLORS">
         <td width="*">{{paletteColor.title}}</td>
-        <td width="25%"><app-color-palette (colorChange)="changeColor(paletteColor.property, $event)"
+        <td width="35%"><app-color-palette (colorChange)="changeColor(paletteColor.property, $event)"
         [value]="(themeService.theme$ | async)[paletteColor.property]"></app-color-palette></td>
-        <td width="25%"><app-color-palette (colorChange)="changeColor(paletteColor.textProperty, $event)"
+        <td width="35%"><app-color-palette (colorChange)="changeColor(paletteColor.textProperty, $event)"
         [value]="(themeService.theme$ | async)[paletteColor.textProperty]"></app-color-palette></td>
       </tr>
   </tbody>

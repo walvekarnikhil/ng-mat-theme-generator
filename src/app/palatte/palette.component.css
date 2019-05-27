@@ -1,3 +1,4 @@
-.listing tr {
-  border-bottom: 1px solid black;
+.listing tr td {
+  border-bottom: 1px solid darkgray;
+  padding: 5px 0;
 }
