@@ -1,10 +1,9 @@
 <div>
-  <mat-toolbar color="primary" class="mat-elevation-z6">
+  <mat-toolbar color="primary" class="mat-elevation-z1">
     <img width="30" alt="Angular Logo" src="./assets/mat-logo.png">
     <span>Mat Theme Generator</span>
     <span class="spacer"></span>
-    <button mat-raised-button
-      color="warn"
+    <button mat-button
       (click)="exportTheme()"
       angulartics2On="click"
       angularticsAction="Export"
@@ -12,9 +11,8 @@
       angularticsCategory="Export theme">
         Export <mat-icon>arrow_downward</mat-icon>
     </button>
-    <a href="https://github.com/walvekarnikhil/ng-mat-theme-generator"
-      title="GitHub" aria-label="GitHub repository link"
-      matRipple>
+    <a href="https://github.com/walvekarnikhil/ng-mat-theme-generator" target="_blank"
+       rel="noopener" title="GitHub" aria-label="GitHub repository link" matRipple>
       <mat-icon svgIcon="github-circle" class="external-logo"></mat-icon>
     </a>
   </mat-toolbar>
