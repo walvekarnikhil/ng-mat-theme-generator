@@ -47,3 +47,16 @@ tr {
   height: 100%;
   width: 100%;
 }
+
+mat-toolbar a {
+  color: white;
+  margin: 0 10px;
+}
+mat-toolbar a:hover {
+  opacity: 0.8;
+}
+
+mat-toolbar a .external-logo {
+  width: 30px;
+  height: 30px;
+}

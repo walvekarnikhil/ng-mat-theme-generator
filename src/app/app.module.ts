@@ -22,6 +22,7 @@ import { ProgressbarComponent } from './mat-widgets/progressbar/progressbar.comp
 import { Angulartics2Module } from 'angulartics2';
 import { HomeComponent } from './home/home.component';
 import { Routes, RouterModule } from '@angular/router';
+import { HttpClientModule } from '@angular/common/http';
 
 const ROUTES: Routes = [
   { path: '',      component: HomeComponent },
@@ -64,6 +65,7 @@ const ROUTES: Routes = [
     MatBadgeModule,
     RouterModule.forRoot(ROUTES),
     Angulartics2Module.forRoot(),
+    HttpClientModule
   ],
   providers: [ThemeService],
   bootstrap: [AppComponent],

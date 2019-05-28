@@ -1,12 +1,13 @@
 import { Component, AfterViewInit, Renderer2, OnDestroy } from '@angular/core';
 import { ThemeService } from './theme.service';
-import { MatDialog, MatSlideToggleChange } from '@angular/material';
+import { MatDialog, MatSlideToggleChange, MatIconRegistry } from '@angular/material';
 import { MatThemeComponent } from './mat-theme/mat-theme.component';
 import { Theme } from './theme-model';
 import { Subscription } from 'rxjs';
 import { Angulartics2GoogleGlobalSiteTag } from 'angulartics2/gst';
 import { Angulartics2 } from 'angulartics2';
 import { Breakpoints, BreakpointObserver } from '@angular/cdk/layout';
+import { DomSanitizer } from '@angular/platform-browser';
 
 
 @Component({
@@ -25,7 +26,12 @@ export class AppComponent implements AfterViewInit, OnDestroy {
     public dialog: MatDialog,
     private renderer: Renderer2,
     angulartics2GoogleGlobalSiteTag: Angulartics2GoogleGlobalSiteTag,
-    breakpointObserver: BreakpointObserver) {
+    breakpointObserver: BreakpointObserver,
+    iconRegistry: MatIconRegistry, sanitizer: DomSanitizer) {
+
+    iconRegistry.addSvgIcon(
+          'github-circle',
+          sanitizer.bypassSecurityTrustResourceUrl('assets/github-circle.svg'));
 
     angulartics2GoogleGlobalSiteTag.startTracking();
 
