@@ -16,36 +16,44 @@ import { Breakpoints, BreakpointObserver } from '@angular/cdk/layout';
 })
 export class AppComponent implements AfterViewInit, OnDestroy {
   title = 'mat-theme-generator';
-  isDarkMode = false;
   isLayoutNotSupported = false;
   dialogDismissed = false;
   private _isDarkModeSubscription: Subscription;
+  private _layoutBreakpointSubscription: Subscription;
 
   constructor(public themeService: ThemeService,
     public dialog: MatDialog,
     private renderer: Renderer2,
     angulartics2GoogleGlobalSiteTag: Angulartics2GoogleGlobalSiteTag,
     breakpointObserver: BreakpointObserver) {
-      breakpointObserver.observe([
-        Breakpoints.Handset,
-        Breakpoints.TabletPortrait
-      ]).subscribe(result => {
-        this.isLayoutNotSupported = result.matches;
-      });
-      angulartics2GoogleGlobalSiteTag.startTracking();
-      this._isDarkModeSubscription = this.themeService.isDarkMode$.subscribe((isDarkMode) => {
-        if (isDarkMode) {
-          this.renderer.addClass(document.body, 'darkMode');
-        } else {
-          this.renderer.removeClass(document.body, 'darkMode');
-        }
-      });
-    }
+
+    angulartics2GoogleGlobalSiteTag.startTracking();
+
+    // show layout warning for handset and tablet portrait layout.
+    this._layoutBreakpointSubscription = breakpointObserver.observe([
+      Breakpoints.Handset,
+      Breakpoints.TabletPortrait
+    ]).subscribe(result => {
+      this.isLayoutNotSupported = result.matches;
+    });
+
+    this._isDarkModeSubscription = this.themeService.isDarkMode$.subscribe((isDarkMode) => {
+      if (isDarkMode) {
+        this.renderer.addClass(document.body, 'darkMode');
+      } else {
+        this.renderer.removeClass(document.body, 'darkMode');
+      }
+    });
+  }
 
   ngOnDestroy(): void {
     this._isDarkModeSubscription.unsubscribe();
+    this._layoutBreakpointSubscription.unsubscribe();
   }
 
+  /**
+   * Split color to RGB values.
+   */
   private separateRGB(color: string) {
     if (color.startsWith('#')) {
       const regEx = color.length === 4 ? /#([A-Za-z0-9])([A-Za-z0-9])([A-Za-z0-9])/ : /#([A-Za-z0-9]{2})([A-Za-z0-9]{2})([A-Za-z0-9]{2})/;
@@ -57,7 +65,11 @@ export class AppComponent implements AfterViewInit, OnDestroy {
     }
     return null;
   }
-    private setStyleVars(colorScheme: Theme) {
+
+  /**
+   * Set variables for styling.
+   */
+  private setStyleVars(colorScheme: Theme) {
     for (const key in colorScheme) {
       if (colorScheme.hasOwnProperty(key)) {
         if (colorScheme[key] instanceof Object) {
