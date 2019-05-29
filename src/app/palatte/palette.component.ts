@@ -5,7 +5,7 @@ import { Angulartics2 } from 'angulartics2';
 @Component({
   selector: 'app-palette',
   templateUrl: './palette.component.html',
-  styleUrls: ['./palette.component.css']
+  styleUrls: ['./palette.component.scss']
 })
 export class PaletteComponent implements OnInit {
   PALETTE_COLORS = [

@@ -1,0 +1,12 @@
+.widgetTable {
+  width: 100%;
+  td {
+    padding: 10px;
+    border-bottom: 1px solid darkgray;
+  }
+}
+
+// not sure how to handle this, darkMode is set for body.
+.darkMode .widgetTable td {
+  border-bottom-color:  rgba(255, 255, 255, 0.7);
+}
