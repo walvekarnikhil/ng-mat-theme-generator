@@ -1,14 +1,12 @@
 import { Component, OnInit, Output, EventEmitter, Input } from '@angular/core';
-import ColorPalette from '../../assets/material-palette.json';
 
 
 @Component({
   selector: 'app-color-palette',
   templateUrl: './color-palette.component.html',
-  styleUrls: ['./color-palette.component.css']
+  styleUrls: ['./color-palette.component.scss']
 })
 export class ColorPaletteComponent implements OnInit {
-  colors = ColorPalette;
   @Output()
   colorChange = new EventEmitter<string>();
 

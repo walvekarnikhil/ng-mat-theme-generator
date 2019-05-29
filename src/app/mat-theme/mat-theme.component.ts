@@ -4,7 +4,7 @@ import { ThemeService } from '../theme.service';
 @Component({
   selector: 'app-mat-theme',
   templateUrl: './mat-theme.component.html',
-  styleUrls: ['./mat-theme.component.css']
+  styleUrls: ['./mat-theme.component.scss']
 })
 export class MatThemeComponent implements OnInit {
 

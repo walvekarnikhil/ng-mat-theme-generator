@@ -30,35 +30,38 @@ tr {
   background-color: rgba(0,0,0,0.5); /* Black background with opacity */
   z-index: 2; /* Specify a stack order in case you're using a different order for other elements */
   cursor: pointer; /* Add a pointer on hover */
+
+  .overlayContents {
+    background-color: white;
+    width: 60%;
+    padding: 30px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    -ms-transform: translate(-50%,-50%);
+    .mat-card {
+      height: 100%;
+      width: 100%;
+    }
+  }
 }
 
-#layoutNotSupported .overlayContents {
-  background-color: white;
-  width: 60%;
-  padding: 30px;
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%,-50%);
-  -ms-transform: translate(-50%,-50%);
-}
+.mat-toolbar {
+  img {
+    margin-right: 16px;
+  }
 
-.overlayContents .mat-card {
-  height: 100%;
-  width: 100%;
-}
-
-.mat-toolbar img {
-  margin-right: 16px;
-}
-.mat-toolbar a:hover {
-  opacity: 0.8;
-}
-
-.mat-toolbar a .external-logo {
-  color: white;
-  width: 30px;
-  height: 30px;
-  vertical-align: top;
-  margin-left: 16px;
+  a {
+    :hover {
+      opacity: 0.8;
+    }
+    .external-logo {
+      color: white;
+      width: 30px;
+      height: 30px;
+      vertical-align: top;
+      margin-left: 16px;
+    }
+  }
 }
