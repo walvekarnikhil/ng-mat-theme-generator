@@ -3,7 +3,7 @@ import { NgModule } from '@angular/core';
 import {BrowserAnimationsModule} from '@angular/platform-browser/animations';
 import { FlexLayoutModule } from '@angular/flex-layout';
 
-import { MatToolbarModule, MatCheckboxModule, MatListModule, MatButtonModule,
+import { MatToolbarModule, MatCheckboxModule, MatRadioModule, MatListModule, MatButtonModule,
   MatIconModule, MatChipsModule, MatDialogModule, MatProgressBarModule,
   MatDividerModule, MatCardModule, MatFormFieldModule, MatAutocompleteModule,
   MatInputModule, MatSlideToggleModule, MatExpansionModule, MatBadgeModule } from '@angular/material';
@@ -43,6 +43,7 @@ const ROUTES: Routes = [
     MatToolbarModule,
     BrowserAnimationsModule,
     MatCheckboxModule,
+    MatRadioModule,
     MatListModule,
     FlexLayoutModule,
     MatButtonModule,
