@@ -1,0 +1,22 @@
+language: node_js
+node_js:
+  - "9"
+dist: trusty
+sudo: required
+branches:
+  except:
+    - gh-pages
+before_script:
+  - npm install -g @angular/cli
+script:
+- npm install
+- ng lint
+- ng build --prod --base-href https://www.nikhilwalvekar.com/ng-mat-theme-generator/
+deploy:
+  provider: pages
+  skip_cleanup: true
+  local_dir: ./dist/mat-theme-generator/
+  github_token: $GITHUB_TOKEN  # Set in the settings page of your repository, as a secure variable
+  keep_history: true
+  on:
+    branch: master
