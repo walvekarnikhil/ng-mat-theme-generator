@@ -1,0 +1,80 @@
+{
+  "configVersion": 1,
+  "timestamp": 1559578624908,
+  "index": "https://www.nikhilwalvekar.com/ng-mat-theme-generator/index.html",
+  "assetGroups": [
+    {
+      "name": "app",
+      "installMode": "prefetch",
+      "updateMode": "prefetch",
+      "urls": [
+        "https://www.nikhilwalvekar.com/ng-mat-theme-generator/index.html",
+        "https://www.nikhilwalvekar.com/ng-mat-theme-generator/main.7241b027a9fe306fce80.js",
+        "https://www.nikhilwalvekar.com/ng-mat-theme-generator/polyfills.0fa3e9588b07b25d43c2.js",
+        "https://www.nikhilwalvekar.com/ng-mat-theme-generator/runtime.26209474bfa8dc87a77c.js",
+        "https://www.nikhilwalvekar.com/ng-mat-theme-generator/styles.bcb16db21e31f99b42b5.css"
+      ],
+      "patterns": []
+    },
+    {
+      "name": "assets",
+      "installMode": "lazy",
+      "updateMode": "prefetch",
+      "urls": [
+        "https://www.nikhilwalvekar.com/ng-mat-theme-generator/assets/GitHub-Mark-Light-32px.png",
+        "https://www.nikhilwalvekar.com/ng-mat-theme-generator/assets/github-circle.svg",
+        "https://www.nikhilwalvekar.com/ng-mat-theme-generator/assets/icons/icon-128x128.png",
+        "https://www.nikhilwalvekar.com/ng-mat-theme-generator/assets/icons/icon-144x144.png",
+        "https://www.nikhilwalvekar.com/ng-mat-theme-generator/assets/icons/icon-152x152.png",
+        "https://www.nikhilwalvekar.com/ng-mat-theme-generator/assets/icons/icon-192x192.png",
+        "https://www.nikhilwalvekar.com/ng-mat-theme-generator/assets/icons/icon-384x384.png",
+        "https://www.nikhilwalvekar.com/ng-mat-theme-generator/assets/icons/icon-512x512.png",
+        "https://www.nikhilwalvekar.com/ng-mat-theme-generator/assets/icons/icon-72x72.png",
+        "https://www.nikhilwalvekar.com/ng-mat-theme-generator/assets/icons/icon-96x96.png",
+        "https://www.nikhilwalvekar.com/ng-mat-theme-generator/assets/mat-logo.png",
+        "https://www.nikhilwalvekar.com/ng-mat-theme-generator/assets/material-palette.json",
+        "https://www.nikhilwalvekar.com/ng-mat-theme-generator/assets/ng-mat-theme-generator.webp"
+      ],
+      "patterns": []
+    }
+  ],
+  "dataGroups": [],
+  "hashTable": {
+    "https://www.nikhilwalvekar.com/ng-mat-theme-generator/assets/GitHub-Mark-Light-32px.png": "b2a79b392657b559776ce122c89e42c42970595f",
+    "https://www.nikhilwalvekar.com/ng-mat-theme-generator/assets/github-circle.svg": "7ea5ff540d434903245800e30d06920c6235d053",
+    "https://www.nikhilwalvekar.com/ng-mat-theme-generator/assets/icons/icon-128x128.png": "dae3b6ed49bdaf4327b92531d4b5b4a5d30c7532",
+    "https://www.nikhilwalvekar.com/ng-mat-theme-generator/assets/icons/icon-144x144.png": "b0bd89982e08f9bd2b642928f5391915b74799a7",
+    "https://www.nikhilwalvekar.com/ng-mat-theme-generator/assets/icons/icon-152x152.png": "7479a9477815dfd9668d60f8b3b2fba709b91310",
+    "https://www.nikhilwalvekar.com/ng-mat-theme-generator/assets/icons/icon-192x192.png": "1abd80d431a237a853ce38147d8c63752f10933b",
+    "https://www.nikhilwalvekar.com/ng-mat-theme-generator/assets/icons/icon-384x384.png": "329749cd6393768d3131ed6304c136b1ca05f2fd",
+    "https://www.nikhilwalvekar.com/ng-mat-theme-generator/assets/icons/icon-512x512.png": "559d9c4318b45a1f2b10596bbb4c960fe521dbcc",
+    "https://www.nikhilwalvekar.com/ng-mat-theme-generator/assets/icons/icon-72x72.png": "c457e56089a36952cd67156f9996bc4ce54a5ed9",
+    "https://www.nikhilwalvekar.com/ng-mat-theme-generator/assets/icons/icon-96x96.png": "3914125a4b445bf111c5627875fc190f560daa41",
+    "https://www.nikhilwalvekar.com/ng-mat-theme-generator/assets/mat-logo.png": "e2c2667f3134b130a1bf6f5b6b57e8ccdeba3340",
+    "https://www.nikhilwalvekar.com/ng-mat-theme-generator/assets/material-palette.json": "e8627032891aec6c4d3783a9ff002e7dd5cd6723",
+    "https://www.nikhilwalvekar.com/ng-mat-theme-generator/assets/ng-mat-theme-generator.webp": "40e407494193f705d99c564801f0cff3ae2b1a76",
+    "https://www.nikhilwalvekar.com/ng-mat-theme-generator/index.html": "ec4a586b28d71a396e576b3beca62d200cfecff6",
+    "https://www.nikhilwalvekar.com/ng-mat-theme-generator/main.7241b027a9fe306fce80.js": "91cfe796f509cf1867b3b2365beb6d050df22a73",
+    "https://www.nikhilwalvekar.com/ng-mat-theme-generator/polyfills.0fa3e9588b07b25d43c2.js": "6946e10a03311677a01490b8e91741668e64e17e",
+    "https://www.nikhilwalvekar.com/ng-mat-theme-generator/runtime.26209474bfa8dc87a77c.js": "b62956c2192bfe5516d6374e753773901ed50ec5",
+    "https://www.nikhilwalvekar.com/ng-mat-theme-generator/styles.bcb16db21e31f99b42b5.css": "0be7a15703c8b90cd64f9ff0d9306636248d882f"
+  },
+  "navigationUrls": [
+    {
+      "positive": true,
+      "regex": "^\\/.*$"
+    },
+    {
+      "positive": false,
+      "regex": "^\\/(?:.+\\/)?[^/]*\\.[^/]*$"
+    },
+    {
+      "positive": false,
+      "regex": "^\\/(?:.+\\/)?[^/]*__[^/]*$"
+    },
+    {
+      "positive": false,
+      "regex": "^\\/(?:.+\\/)?[^/]*__[^/]*\\/.*$"
+    }
+  ]
+}
