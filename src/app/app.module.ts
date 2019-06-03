@@ -23,6 +23,8 @@ import { Angulartics2Module } from 'angulartics2';
 import { HomeComponent } from './home/home.component';
 import { Routes, RouterModule } from '@angular/router';
 import { HttpClientModule } from '@angular/common/http';
+import { ServiceWorkerModule } from '@angular/service-worker';
+import { environment } from '../environments/environment';
 
 const ROUTES: Routes = [
   { path: '',      component: HomeComponent },
@@ -66,7 +68,8 @@ const ROUTES: Routes = [
     MatBadgeModule,
     RouterModule.forRoot(ROUTES),
     Angulartics2Module.forRoot(),
-    HttpClientModule
+    HttpClientModule,
+    ServiceWorkerModule.register('ngsw-worker.js', { enabled: environment.production })
   ],
   providers: [ThemeService],
   bootstrap: [AppComponent],
