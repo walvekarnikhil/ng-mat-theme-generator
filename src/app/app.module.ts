@@ -18,6 +18,8 @@ import { MatInputModule } from '@angular/material/input';
 import { MatListModule } from '@angular/material/list';
 import { MatProgressBarModule } from '@angular/material/progress-bar';
 import { MatRadioModule } from '@angular/material/radio';
+import { MatMenuModule } from '@angular/material/menu';
+import { MatGridListModule } from '@angular/material/grid-list';
 import { MatSlideToggleModule } from '@angular/material/slide-toggle';
 import { MatToolbarModule } from '@angular/material/toolbar';
 import { AppComponent } from './app.component';
@@ -30,7 +32,7 @@ import { ColorPickerModule } from 'narik-angular-color-picker';
 import { AutocompleteExampleComponent } from './mat-widgets/autocomplete-example/autocomplete-example.component';
 import { ReactiveFormsModule, FormsModule } from '@angular/forms';
 import { PrismModule } from '@ngx-prism/core';
-import {NgxCopyPasteModule} from 'ngx-copypaste';
+import { NgxCopyPasteModule } from 'ngx-copypaste';
 import { ProgressbarComponent } from './mat-widgets/progressbar/progressbar.component';
 import { Angulartics2Module } from 'angulartics2';
 import { HomeComponent } from './home/home.component';
@@ -38,20 +40,22 @@ import { Routes, RouterModule } from '@angular/router';
 import { HttpClientModule } from '@angular/common/http';
 import { ServiceWorkerModule } from '@angular/service-worker';
 import { environment } from '../environments/environment';
+import { PrebuiltThemeComponent } from './prebuilt-theme/prebuilt-theme.component';
 
 const ROUTES: Routes = [
   { path: '',      component: HomeComponent },
 ];
 @NgModule({
   declarations: [
-    AppComponent,
     MatWidgetsComponent,
     MatThemeComponent,
     PaletteComponent,
     ColorPaletteComponent,
     AutocompleteExampleComponent,
     ProgressbarComponent,
-    HomeComponent
+    PrebuiltThemeComponent,
+    HomeComponent,
+    AppComponent,
   ],
   imports: [
     BrowserModule,
@@ -68,6 +72,8 @@ const ROUTES: Routes = [
     MatProgressBarModule,
     MatDividerModule,
     MatCardModule,
+    MatMenuModule,
+    MatGridListModule,
     ColorPickerModule,
     MatFormFieldModule,
     MatAutocompleteModule,

@@ -4,7 +4,7 @@ import { MatDialog } from '@angular/material/dialog';
 import { MatIconRegistry } from '@angular/material/icon';
 import { MatSlideToggleChange } from '@angular/material/slide-toggle';
 import { MatThemeComponent } from './mat-theme/mat-theme.component';
-import { Theme } from './theme-model';
+import { Theme, Palette } from './theme-model';
 import { Subscription } from 'rxjs';
 import { Angulartics2GoogleGlobalSiteTag } from 'angulartics2/gst';
 import { Angulartics2 } from 'angulartics2';
@@ -71,13 +71,13 @@ export class AppComponent implements AfterViewInit, OnDestroy {
       const b = parseInt(colorValues[3], 16);
       return [r, g, b];
     }
-    return null;
+    return [];
   }
 
   /**
    * Set variables for styling.
    */
-  private setStyleVars(colorScheme: Theme) {
+  private setStyleVars(colorScheme: Palette) {
     for (const key in colorScheme) {
       if (colorScheme.hasOwnProperty(key)) {
         if (colorScheme[key] instanceof Object) {
@@ -92,7 +92,7 @@ export class AppComponent implements AfterViewInit, OnDestroy {
   }
   ngAfterViewInit() {
     this.themeService.theme$.subscribe((theme) => {
-      this.setStyleVars(theme);
+      this.setStyleVars(theme.palette);
     });
   }
 

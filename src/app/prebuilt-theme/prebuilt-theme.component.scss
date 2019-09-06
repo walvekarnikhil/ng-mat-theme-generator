@@ -1,0 +1,32 @@
+.theme-picker-primary {
+  width: 100%;
+  height: 100%;
+}
+.pre-built-theme-label {
+  margin: auto 0;
+}
+.theme-picker-menu {
+  .mat-menu-content {
+    padding: 8px;
+    .mat-menu-item {
+      flex: 0 0 auto;
+      padding: 0;
+      overflow: hidden;
+      .theme-picker-swatch {
+        width: 36px;
+        height: 36px;
+        border-radius: 50%;
+        overflow: hidden;
+        position: relative;
+        margin: 6px;
+        .theme-chosen-icon {
+          color: white;
+          position: absolute;
+          left: 50%; top: 50%;
+          transform: translate(-50%, -50%);
+        }
+
+      }
+    }
+  }
+}
