@@ -1,6 +1,8 @@
 import { Component, AfterViewInit, Renderer2, OnDestroy } from '@angular/core';
 import { ThemeService } from './theme.service';
-import { MatDialog, MatSlideToggleChange, MatIconRegistry } from '@angular/material';
+import { MatDialog } from '@angular/material/dialog';
+import { MatIconRegistry } from '@angular/material/icon';
+import { MatSlideToggleChange } from '@angular/material/slide-toggle';
 import { MatThemeComponent } from './mat-theme/mat-theme.component';
 import { Theme, Palette } from './theme-model';
 import { Subscription } from 'rxjs';
