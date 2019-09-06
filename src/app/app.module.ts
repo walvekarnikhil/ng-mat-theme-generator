@@ -6,7 +6,7 @@ import { FlexLayoutModule } from '@angular/flex-layout';
 import { MatToolbarModule, MatCheckboxModule, MatRadioModule, MatListModule, MatButtonModule,
   MatIconModule, MatChipsModule, MatDialogModule, MatProgressBarModule,
   MatDividerModule, MatCardModule, MatFormFieldModule, MatAutocompleteModule,
-  MatInputModule, MatSlideToggleModule, MatExpansionModule, MatBadgeModule } from '@angular/material';
+  MatInputModule, MatSlideToggleModule, MatExpansionModule, MatBadgeModule, MatMenuModule, MatGridListModule } from '@angular/material';
 import { AppComponent } from './app.component';
 import { MatWidgetsComponent } from './mat-widgets/mat-widgets.component';
 import { ThemeService } from './theme.service';
@@ -25,20 +25,22 @@ import { Routes, RouterModule } from '@angular/router';
 import { HttpClientModule } from '@angular/common/http';
 import { ServiceWorkerModule } from '@angular/service-worker';
 import { environment } from '../environments/environment';
+import { PrebuiltThemeComponent } from './prebuilt-theme/prebuilt-theme.component';
 
 const ROUTES: Routes = [
   { path: '',      component: HomeComponent },
 ];
 @NgModule({
   declarations: [
-    AppComponent,
     MatWidgetsComponent,
     MatThemeComponent,
     PaletteComponent,
     ColorPaletteComponent,
     AutocompleteExampleComponent,
     ProgressbarComponent,
-    HomeComponent
+    PrebuiltThemeComponent,
+    HomeComponent,
+    AppComponent,
   ],
   imports: [
     BrowserModule,
@@ -55,6 +57,8 @@ const ROUTES: Routes = [
     MatProgressBarModule,
     MatDividerModule,
     MatCardModule,
+    MatMenuModule,
+    MatGridListModule,
     ColorPickerModule,
     MatFormFieldModule,
     MatAutocompleteModule,

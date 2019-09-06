@@ -13,28 +13,28 @@ theme">
         <mat-icon>assignment</mat-icon>
     </button>
   <ngx-prism [language]="'css'" ngxCopyPaste #cp="copy">
-    <pre >
+    <pre *ngIf="!theme.isPreBuilt; else elseBlock">
 @import '~@angular/material/theming';
 @include mat-core();
 
 $mat-primary-scheme: (
-  100: {{ theme.primaryLightColor }},
-  500: {{ theme.primaryColor }},
-  700: {{ theme.primaryDarkColor }},
+  100: {{ theme.palette.primaryLightColor }},
+  500: {{ theme.palette.primaryColor }},
+  700: {{ theme.palette.primaryDarkColor }},
   contrast: (
-    100: {{ theme.primaryLightColorText }},
-    500: {{ theme.primaryColorText }},
-    700: {{ theme.primaryDarkColorText }},
+    100: {{ theme.palette.primaryLightColorText }},
+    500: {{ theme.palette.primaryColorText }},
+    700: {{ theme.palette.primaryDarkColorText }},
   )
 );
 $mat-accent-scheme: (
-  100: {{ theme.accentLightColor }},
-  500: {{ theme.accentColor }},
-  700: {{ theme.accentDarkColor }},
+  100: {{ theme.palette.accentLightColor }},
+  500: {{ theme.palette.accentColor }},
+  700: {{ theme.palette.accentDarkColor }},
   contrast: (
-    100: {{ theme.accentLightColorText }},
-    500: {{ theme.accentColorText }},
-    700: {{ theme.accentDarkColorText }},
+    100: {{ theme.palette.accentLightColorText }},
+    500: {{ theme.palette.accentColorText }},
+    700: {{ theme.palette.accentDarkColorText }},
   )
 );
 $mat-primary-palette: mat-palette($mat-primary-scheme);
@@ -51,6 +51,9 @@ $app-dark-theme: mat-dark-theme($mat-primary-palette, $mat-accent-palette);
   @include angular-material-theme($app-dark-theme);
 {{ '}' }}
     </pre>
+    <ng-template #elseBlock>
+        @import "~@angular/material/prebuilt-themes/{{theme.name}}.css";
+    </ng-template>
   </ngx-prism>
 </mat-card>
 </ng-container>

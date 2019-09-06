@@ -1,6 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { MatSlideToggleChange } from '@angular/material';
 import { ThemeService } from '../theme.service';
+import { Theme } from '../theme-model';
 
 @Component({
   selector: 'app-home',
@@ -16,5 +17,9 @@ export class HomeComponent implements OnInit {
 
   toggleDarkMode(slideToggleChangeEvent: MatSlideToggleChange) {
     this.themeService.setDarkMode(slideToggleChangeEvent.checked);
+  }
+
+  installTheme(theme: Theme) {
+    this.themeService.setTheme(theme);
   }
 }
