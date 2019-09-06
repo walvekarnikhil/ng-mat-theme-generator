@@ -1,23 +1,9 @@
 import { Injectable } from '@angular/core';
 import { BehaviorSubject } from 'rxjs';
 import { Theme } from './theme-model';
+import PREBUILT_THEMES from './prebuilt-theme/prebuilt-themes';
 
-const DEFAULT_THEME = {
-  palette: {
-    primaryColor: '#1976d2',
-    primaryLightColor: '#63a4ff',
-    primaryDarkColor: '#004ba0',
-    accentColor: '#26a69a',
-    accentLightColor: '#64d8cb',
-    accentDarkColor: '#00766c',
-    primaryColorText: '#ffffff',
-    primaryLightColorText: '#000000',
-    primaryDarkColorText: '#ffffff',
-    accentColorText: '#ffffff',
-    accentLightColorText: '#000000',
-    accentDarkColorText: '#ffffff',
-  }
-} as Theme;
+const DEFAULT_THEME = PREBUILT_THEMES[0];
 
 @Injectable({
   providedIn: 'root'
