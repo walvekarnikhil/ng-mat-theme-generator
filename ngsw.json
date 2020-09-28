@@ -1,6 +1,6 @@
 {
   "configVersion": 1,
-  "timestamp": 1595351934463,
+  "timestamp": 1601301340814,
   "index": "https://www.nikhilwalvekar.com/ng-mat-theme-generator/index.html",
   "assetGroups": [
     {
@@ -9,8 +9,8 @@
       "updateMode": "prefetch",
       "urls": [
         "https://www.nikhilwalvekar.com/ng-mat-theme-generator/index.html",
-        "https://www.nikhilwalvekar.com/ng-mat-theme-generator/main-es2015.a8523ff1fd36884591e0.js",
-        "https://www.nikhilwalvekar.com/ng-mat-theme-generator/main-es5.a8523ff1fd36884591e0.js",
+        "https://www.nikhilwalvekar.com/ng-mat-theme-generator/main-es2015.9d4025c2dee5a32cd54a.js",
+        "https://www.nikhilwalvekar.com/ng-mat-theme-generator/main-es5.9d4025c2dee5a32cd54a.js",
         "https://www.nikhilwalvekar.com/ng-mat-theme-generator/polyfills-es2015.6b29252ff040802d1951.js",
         "https://www.nikhilwalvekar.com/ng-mat-theme-generator/polyfills-es5.92b83e2a51232879ce33.js",
         "https://www.nikhilwalvekar.com/ng-mat-theme-generator/runtime-es2015.24b02acc1f369d9b9f37.js",
@@ -56,9 +56,9 @@
     "https://www.nikhilwalvekar.com/ng-mat-theme-generator/assets/mat-logo.png": "e2c2667f3134b130a1bf6f5b6b57e8ccdeba3340",
     "https://www.nikhilwalvekar.com/ng-mat-theme-generator/assets/material-palette.json": "e8627032891aec6c4d3783a9ff002e7dd5cd6723",
     "https://www.nikhilwalvekar.com/ng-mat-theme-generator/assets/ng-mat-theme-generator.webp": "40e407494193f705d99c564801f0cff3ae2b1a76",
-    "https://www.nikhilwalvekar.com/ng-mat-theme-generator/index.html": "560ff0923f3f9b9ea27aac292b5407d853dbf897",
-    "https://www.nikhilwalvekar.com/ng-mat-theme-generator/main-es2015.a8523ff1fd36884591e0.js": "4b9966bcc8465e34a4c2dff7e82fea150235367f",
-    "https://www.nikhilwalvekar.com/ng-mat-theme-generator/main-es5.a8523ff1fd36884591e0.js": "bf1d39787ced42dca96e1b99d0cc74f07b5c85d8",
+    "https://www.nikhilwalvekar.com/ng-mat-theme-generator/index.html": "cc25deb27b6a439d848250384a8f15ec4f5a4342",
+    "https://www.nikhilwalvekar.com/ng-mat-theme-generator/main-es2015.9d4025c2dee5a32cd54a.js": "fa0f539412755836accad4958114dc152d83f95c",
+    "https://www.nikhilwalvekar.com/ng-mat-theme-generator/main-es5.9d4025c2dee5a32cd54a.js": "0978dcd14bff34a01b0a78dc25f84ded064713fd",
     "https://www.nikhilwalvekar.com/ng-mat-theme-generator/polyfills-es2015.6b29252ff040802d1951.js": "e2f28c3743afd2899e140ad831df9675c233c02b",
     "https://www.nikhilwalvekar.com/ng-mat-theme-generator/polyfills-es5.92b83e2a51232879ce33.js": "db091f7ef692a1d3add240459a2ea20c81cd6f19",
     "https://www.nikhilwalvekar.com/ng-mat-theme-generator/runtime-es2015.24b02acc1f369d9b9f37.js": "a9aafcf49f49145093fc831efd9b8e2f6c71bb9c",
