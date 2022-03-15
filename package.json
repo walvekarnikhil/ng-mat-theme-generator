@@ -28,7 +28,7 @@
     "@types/prismjs": "^1.16.0",
     "angulartics2": "^8.0.0",
     "core-js": "^3.2.1",
-    "lodash-es": "^4.17.15",
+    "lodash-es": "^4.17.21",
     "narik-angular-color-picker": "^2.0.9",
     "ngx-copypaste": "^8.0.0",
     "prismjs": "^1.21.0",
